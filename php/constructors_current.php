@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar">
   <ul class="menu">
-    <img src="../images/generated_image.png" height="50" width="50">
+    <img src="../images/f1db-logo.png" height="50" width="50">
     <li><a href="#">Home</a></li>
 
     <!-- Constructors Menu -->
@@ -40,6 +40,7 @@
     <li class="right"><a href="#">About Us</a></li>
     <li class="right2"><a href="#">Account</a></li>
   </ul>
-    <h1></h1>
+  </nav>
+    <h1>Current Teams</h1>
 </body>
 </html>
