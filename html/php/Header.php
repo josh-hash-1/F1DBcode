@@ -1,34 +1,37 @@
-<nav class="navbar">
-  <ul class="menu">
-    <img src="../images/f1db-logo.png" height="50" width="50">
-    <li><a href="#">Home</a></li>
+<html>
+    <link rel="stylesheet" href="css/style.css">
+      <nav class="navbar">
+    <ul class="menu">
+      <img src="../images/f1db-logo.png" height="50" width="50">
+      <li><a href="#">Home</a></li>
 
-    <!-- Constructors Menu -->
-    <li class="dropdown">
-      <a href="#">Constructors ▾</a>
-      <ul class="submenu">
-        <li><a href="best_all_time_team.html">Top Constructor's All Time</a></li>
-        <li><a href="constructors_current.html">Current Teams</a></li>
-      </ul>
-    </li>
+      <!-- Constructors Menu -->
+      <li class="dropdown">
+        <a href="#">Constructors ▾</a>
+        <ul class="submenu">
+          <li><a href="best_all_time_team.html">Top Constructor's All Time</a></li>
+          <li><a href="constructors_current.html">Current Teams</a></li>
+        </ul>
+      </li>
 
-    <!-- Drivers Menu -->
-    <li class="dropdown">
-      <a href="#">Drivers ▾</a>
-      <ul class="submenu">
-        <li><a href="drivers_current.html">Current Drivers</a></li>
-        <li><a href="best_all_time_driver.html">Top Driver's of All Time</a></li>
-      </ul>
-    </li>
-    <!-- Races Menu -->
-    <li class="dropdown">
-      <a href="#">Races ▾</a>
-      <ul class="submenu">
-        <li><a href="last_race.html">Last Race</a></li>
-        <li><a href="upcoming_race.html">Future Races</a></li>
-      </ul>
-    </li>
-    <li class="right"><a href="#">About Us</a></li>
-    <li class="right2"><a href="#">Account</a></li>
-  </ul>
-</nav>
+      <!-- Drivers Menu -->
+      <li class="dropdown">
+        <a href="#">Drivers ▾</a>
+        <ul class="submenu">
+          <li><a href="drivers_current.html">Current Drivers</a></li>
+          <li><a href="best_all_time_driver.html">Top Driver's of All Time</a></li>
+        </ul>
+      </li>
+      <!-- Races Menu -->
+      <li class="dropdown">
+        <a href="#">Races ▾</a>
+        <ul class="submenu">
+          <li><a href="last_race.html">Last Race</a></li>
+          <li><a href="upcoming_race.html">Future Races</a></li>
+        </ul>
+      </li>
+      <li class="right"><a href="#">About Us</a></li>
+      <li class="right2"><a href="#">Account</a></li>
+    </ul>
+  </nav>
+</html>
