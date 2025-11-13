@@ -1,6 +1,4 @@
-<html>
-    <link rel="stylesheet" href="css/style.css">
-      <nav class="navbar">
+<nav class="navbar">
     <ul class="menu">
       <img src="../images/f1db-logo.png" height="50" width="50">
       <li><a href="#">Home</a></li>
@@ -34,4 +32,3 @@
       <li class="right2"><a href="#">Account</a></li>
     </ul>
   </nav>
-</html>
