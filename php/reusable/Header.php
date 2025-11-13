@@ -3,8 +3,8 @@
 
 <nav class="navbar">
     <ul class="menu">
-      <img src="../../images/f1db-logo.png" height="50" width="50">
-      <li><a href="../../index.php">Home</a></li>
+      <img src="images/f1db-logo.png" height="50" width="50">
+      <li><a href="index.php">Home</a></li>
 
       <!-- Constructors Menu -->
       <li class="dropdown">
