@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/current_constructor.css">
 </head>
 <body>
-    <?php include "reusable/Header.php" ?>
+    <?php include "php/Header.php" ?>
     <h1>Current Teams</h1>
-    <?php include "reusable/Footer.php"; ?>
+    <?php include "php/Footer.php"; ?>
 </body>
 </html>
