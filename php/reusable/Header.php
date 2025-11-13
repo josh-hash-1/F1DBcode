@@ -1,7 +1,12 @@
+
+<?php
+  $index = "php/index.php";
+?>
+
 <nav class="navbar">
     <ul class="menu">
       <img src="../images/f1db-logo.png" height="50" width="50">
-      <li><a href="#">Home</a></li>
+      <li><a href="<?php echo $index ?>">Home</a></li>
 
       <!-- Constructors Menu -->
       <li class="dropdown">
