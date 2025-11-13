@@ -7,12 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<<<<<<< HEAD
   <?php include "php/reusable/Header.php"; ?>
   <?php include "php/reusable/Footer.php"; ?>
-=======
-  <?php include "reusable/Header.php"; ?>
-  <?php include "reusable/Footer.php"; ?>
->>>>>>> 0c83338 (changed path for index)
 </body>
 </html>
