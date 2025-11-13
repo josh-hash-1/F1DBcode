@@ -7,12 +7,8 @@
     <link rel="stylesheet" href="css/current_constructor.css">
 </head>
 <body>
-<<<<<<< HEAD
-    <?php include "php/Header.php" ?>
-=======
     <?php include "Header.php" ?>
->>>>>>> 2f5eabbc7a734af7676b35c0ebeb2e0897e146f8
     <h1>Current Teams</h1>
-    <?php include "php/Footer.php"; ?>
+    <?php include "Footer.php"; ?>
 </body>
 </html>

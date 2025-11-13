@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <?php include "php/Header.php"; ?>
-<?php include "php/Footer.php"; ?>
+  <?php include "Header.php"; ?>
+<?php include "Footer.php"; ?>
 
 </body>
 </html>
