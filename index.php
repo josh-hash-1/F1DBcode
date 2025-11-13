@@ -8,6 +8,7 @@
 </head>
 <body>
   <?php include "php/reusable/Header.php"; ?>
-  <?php include "php/reusable/Footer.php"; ?>
+<?php include "php/reusable/Footer.php"; ?>
+
 </body>
 </html>
