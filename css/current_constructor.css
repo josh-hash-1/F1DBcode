@@ -14,3 +14,13 @@ h1 {
   text-align: center;
   color: var(--header-color);
 }
+body h2{
+  text-align: center;
+  color: #ff8000;
+  font-size: xx-large;
+}
+body img{
+  display: flex;
+  justify-content: center;
+  
+}
