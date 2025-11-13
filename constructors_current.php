@@ -10,7 +10,11 @@
     <?php include "Header.php" ?>
     <h1>Current Teams</h1>
     <h2>McLaren</h2>
-    <img src="images/2025mclarencarright.png" height="320" width="auto">
+    <div class="car-box">
+        <img src="images/2025mclarencarright.png" height="320" width="auto">
+    </div>
+    
+    
     <?php include "Footer.php"; ?>
 </body>
 </html>

@@ -19,8 +19,16 @@ body h2{
   color: #ff8000;
   font-size: xx-large;
 }
-body img{
+.car-box {
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  background-image: url("../images/mclarenbg.jpg");
+  transition: var(--transition);
 }
+
+.car-box:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+
