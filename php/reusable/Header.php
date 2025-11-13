@@ -1,6 +1,4 @@
 
-
-
 <nav class="navbar">
     <ul class="menu">
       <img src="images/f1db-logo.png" height="50" width="50">
