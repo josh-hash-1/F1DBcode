@@ -9,6 +9,9 @@
 <body>
     <?php include "reusable/Header.php" ?>
     <h1>Current Teams</h1>
+    <h2>Mclaren</h2>
+    <img src="images/2025mclarencarright.png">
     <?php include "reusable/Footer.php"; ?>
+    
 </body>
 </html>
