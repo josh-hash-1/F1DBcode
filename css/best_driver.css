@@ -1,0 +1,23 @@
+.project-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.project-card-basic {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+    flex: 1 1 250px;          
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    /* Makes all cards same height */
+    height: 100%;
+}
