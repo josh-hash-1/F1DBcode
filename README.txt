@@ -5,7 +5,3 @@ We did not create or modify the F1DB dataset and acknowledge that it remains the
 This project is not affiliated with, endorsed by, or sponsored by Formula 1, the FIA, or any related organizations.
 
 [1] Link to database used for this project -> https://github.com/f1db/f1db
-
-
-
-https://prod.liveshare.vsengsaas.visualstudio.com/join?3B4F1C5F6187330469073F992B84C989E510
