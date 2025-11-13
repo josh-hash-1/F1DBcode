@@ -8,7 +8,9 @@
 </head>
 <body>
   <?php include "Header.php"; ?>
-<?php include "Footer.php"; ?>
-
+  <div class="main" style="height: 100vh">
+    
+  </div>
+  <?php include "Footer.php"; ?>
 </body>
 </html>

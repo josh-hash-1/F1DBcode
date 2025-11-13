@@ -1,0 +1,10 @@
+
+h1 {
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--header-color);
+}
+
+.main {
+    height: 100vh;
+}
