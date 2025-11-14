@@ -75,11 +75,80 @@
                 <img src="images/2025astonmartincarright.png" height="320" width="auto">
             </div>
             <p>
-                
+                Aston Martin is a rising force in Formula 1, blending classic British motorsport heritage with modern 
+                engineering ambition. Relaunching its works team in 2021, the team has quickly built a reputation for 
+                rapid development, strong technical partnerships, and competitive performances. With a commitment to 
+                innovation and a growing infrastructure, Aston Martin continues to push toward the front of the grid while 
+                carrying the prestige of one of the world’s most iconic automotive brands.
             </p>
         </div>
+
+    <div class="alpine">
+        <h2>Alpine BWT</h2>
+        <div class="car-box-alpine">
+            <img src="images/2025alpinecarright.png" height="320" width="auto">
+        </div>
+        <p>
+            Alpine is a French Formula 1 team known for its strong racing heritage, sharp engineering, and commitment to 
+            developing competitive performance through Renault’s works power unit. Rebranded in 2021, Alpine blends bold 
+            design with factory-backed resources, aiming to consistently challenge the front of the midfield. With a focus 
+            on innovation and long-term progress, the team represents France’s modern push for success in Formula 1.
+        </p>
     </div>
 
+    <div class="haas">
+        <h2>Haas MoneyGram</h2>
+        <div class="car-box-haas">
+            <img src="images/2025haascarright.png" height="320" width="auto">
+        </div>
+        <p>
+            Haas F1 Team is the first American-led outfit in Formula 1’s modern era, known for its lean operational model 
+            and technical partnership with Ferrari. Founded in 2016, the team focuses on efficiency by outsourcing components 
+            while maintaining a competitive presence on the grid. Despite challenges, Haas continues to develop steadily, 
+            aiming to strengthen its performance and secure consistent midfield results.
+        </p>
+    </div>
+
+    <div class="racing-bulls">
+        <h2>Visa Cash App Racing Bulls</h2>
+        <div class="car-box-racing-bulls">
+            <img src="images/2025racingbullscarright.png" height="320" width="auto">
+        </div>
+        <p>
+            Racing Bulls is Red Bull’s sister Formula 1 team, focused on developing young talent and refining technical 
+            innovation within a lean, agile structure. Formerly known as Toro Rosso and AlphaTauri, the team has a history of 
+            nurturing future stars and delivering standout performances against larger rivals. With continued support from Red Bull 
+            and a sharpened competitive identity, Racing Bulls aims to be a consistent and opportunistic force in the midfield.
+        </p>
+    </div>
+
+    <div class="williams">
+        <h2>Atlassian Williams Racing</h2>
+        <div class="car-box-williams">
+            <img src="images/2025williamscarright.png" height="320" width="auto">
+        </div>
+        <p>
+            Williams Racing is one of Formula 1’s most historic and respected teams, known for its engineering heritage, independent 
+            spirit, and multiple championship successes. Founded in 1977, Williams became a dominant force through innovation and
+             technical excellence, producing legendary drivers and iconic cars. Today, the team is focused on rebuilding and 
+             modernizing its operations, aiming to climb back toward the front of the grid while honoring its proud legacy.
+        </p>
+    </div>
+
+    <div class="sauber">
+        <h2>F1 Team Kick Stake Sauber</h2>
+        <div class="car-box-sauber">
+            <img src="images/2025kicksaubercarright.png" height="320" width="auto">
+        </div>
+        <p>
+            F1 Team Kick Stake Sauber is a long-standing Formula 1 team recognized for its technical resilience, strong 
+            talent development, and Swiss engineering heritage. Rebranded for 2024 as part of its transition toward becoming 
+            the Audi works team, Sauber combines efficiency and precision with forward-looking investment. With a history of 
+            nurturing standout drivers and delivering competitive midfield performances, Kick Sauber continues to build 
+            momentum toward a new era of factory-backed ambition.
+        </p>
+    </div>
+</div>
     <?php include "Footer.php"; ?>
 </body>
 
