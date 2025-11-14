@@ -25,10 +25,36 @@ body h2{
   align-items: center;
   background-image: url("../images/mclarenbg.jpg");
   transition: var(--transition);
+  padding: 10px 10px;
 }
 
 .car-box:hover {
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+/* Mobile: make car image fit screen */
+@media (max-width: 768px) {
+  .car-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
 
