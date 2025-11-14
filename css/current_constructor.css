@@ -13,13 +13,33 @@ h1 {
   font-family: var(--font-family);
   text-align: center;
   color: var(--header-color);
+  font-size: xxx-large;
 }
-body h2{
+
+@media (max-width: 768px) {
+  .car-box-mclaren img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-mclaren {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mclaren p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .mclaren h2{
   text-align: center;
   color: #ff8000;
   font-size: xx-large;
 }
-.car-box {
+.car-box-mclaren {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +48,7 @@ body h2{
   padding: 10px 10px;
 }
 
-.car-box:hover {
+.car-box-mclaren:hover {
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
@@ -38,23 +58,170 @@ p{
   font-weight: 600;
   font-size: x-large;
 }
-/* Mobile: make car image fit screen */
+
 @media (max-width: 768px) {
-  .car-box img {
+  .car-box-ferrari img {
     width: 100%;
     height: auto;
   }
 
-  .car-box {
+  .car-box-ferrari {
     padding: 5px;
     background-size: cover;
     background-position: center;
   }
 
-  p {
+  .ferrari p {
     padding: 10% 5%;
     font-size: large;
   }
 }
 
+body .ferrari h2{
+  text-align: center;
+  color: #ff0000;
+  font-size: xx-large;
+}
+.car-box-ferrari {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/ferraribg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+}
 
+.car-box-ferrari:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-redbull img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-redbull {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .redbull p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+.car-box-redbull {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/redbullbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+}
+
+.car-box-redbull:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+
+body .redbull h2{
+  text-align: center;
+  color: #444899;
+  font-size: xx-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-mercedes img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-mercedes {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mercedes p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .mercedes h2{
+  text-align: center;
+  color: #8adfcb;
+  font-size: xx-large;
+}
+.car-box-mercedes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/mercedesbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+}
+
+.car-box-mercedes:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-aston-martin img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-aston-martin {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .aston-martin p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .aston-martin h2{
+  text-align: center;
+  color: #496f46;
+  font-size: xx-large;
+}
+.car-box-aston-martin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/mercedesbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+}
+
+.car-box-aston-martin:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
