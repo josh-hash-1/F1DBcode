@@ -6,10 +6,13 @@
   <title>F1DB - Welcome</title>
   
 </head>
+<style>
+
+</style>
 <body>
   <?php include "Header.php"; ?>
   <div class="main" style="height: 100vh">
-    
+      <div class="intro-bg"></div>
   </div>
   <?php include "Footer.php"; ?>
 </body>
