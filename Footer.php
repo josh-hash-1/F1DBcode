@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <style>
       /* === Base Styling === */
       /* === Default colours for account with no favourite teams === */
@@ -34,9 +31,7 @@
 <footer>
     <div><p>&copy 2025 F1DB.</p></div>
 </footer>
-=======
 <link rel="stylesheet" href="css/footer_style.css">
->>>>>>> b99a93d588cecb35ebf0568cf3a619c5457852a9
 <footer class="site-footer">
     <div class="footer-container">
         
@@ -69,5 +64,3 @@
         <p>&copy; <?php echo date('Y'); ?></p>
     </div>
 </footer>
-
->>>>>>> 5dc5f81f1a550f93b675a7b3849b4afe280a5f7d
