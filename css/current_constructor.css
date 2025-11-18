@@ -52,12 +52,13 @@ body .mclaren h2{
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
-p{
-  padding: 5% 20%;
+.car-box p {
+  padding: 30px 20px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: x-large;
+  font-size: 1.2rem;
 }
+
 
 @media (max-width: 768px) {
   .car-box-ferrari img {
@@ -95,12 +96,13 @@ body .ferrari h2{
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
-p{
-  padding: 5% 20%;
+.car-box p {
+  padding: 30px 20px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: x-large;
+  font-size: 1.2rem;
 }
+
 
 @media (max-width: 768px) {
   .car-box-redbull img {
@@ -176,12 +178,13 @@ body .mercedes h2{
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
-p{
-  padding: 5% 20%;
+.car-box p {
+  padding: 30px 20px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: x-large;
+  font-size: 1.2rem;
 }
+
 
 @media (max-width: 768px) {
   .car-box-aston-martin img {
@@ -220,12 +223,13 @@ body .aston-martin h2{
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
-p{
-  padding: 5% 20%;
+.car-box p {
+  padding: 30px 20px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: x-large;
+  font-size: 1.2rem;
 }
+
 
 @media (max-width: 768px) {
   .car-box-alpine img {
@@ -264,12 +268,13 @@ body .alpine h2{
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
-p{
-  padding: 5% 20%;
+.car-box p {
+  padding: 30px 20px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: x-large;
+  font-size: 1.2rem;
 }
+
 
 @media (max-width: 768px) {
   .car-box-haas img {
@@ -308,12 +313,13 @@ body .haas h2{
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
-p{
-  padding: 5% 20%;
+.car-box p {
+  padding: 30px 20px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: x-large;
+  font-size: 1.2rem;
 }
+
 
 @media (max-width: 768px) {
   .car-box-racing-bulls img {
@@ -352,12 +358,13 @@ body .racing-bulls h2{
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
-p{
-  padding: 5% 20%;
+.car-box p {
+  padding: 30px 20px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: x-large;
+  font-size: 1.2rem;
 }
+
 
 @media (max-width: 768px) {
   .car-box-williams img {
@@ -396,12 +403,13 @@ body .williams h2{
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
-p{
-  padding: 5% 20%;
+.car-box p {
+  padding: 30px 20px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: x-large;
+  font-size: 1.2rem;
 }
+
 
 @media (max-width: 768px) {
   .car-box-sauber img {
@@ -440,9 +448,10 @@ body .sauber h2{
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
-p{
-  padding: 5% 20%;
+
+.car-box p {
+  padding: 30px 20px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: x-large;
+  font-size: 1.2rem;
 }

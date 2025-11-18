@@ -24,7 +24,7 @@
                 the dominant Prost–Senna partnership of the 1980s, and later championship runs with Mika Häkkinen and Lewis Hamilton using
                 Mercedes power.
             </p>
-            <button>
+            <button></button>
         </div>
 
         <div class="ferrari">
@@ -150,6 +150,7 @@
     </div>
 </div>
     <?php include "Footer.php"; ?>
+    
 </body>
 
 </html>
