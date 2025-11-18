@@ -1,4 +1,6 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <style>
       /* === Base Styling === */
       /* === Default colours for account with no favourite teams === */
@@ -34,6 +36,7 @@
 </footer>
 =======
 <link rel="stylesheet" href="css/footer_style.css">
+>>>>>>> b99a93d588cecb35ebf0568cf3a619c5457852a9
 <footer class="site-footer">
     <div class="footer-container">
         
