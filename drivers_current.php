@@ -23,9 +23,7 @@
         padding-top: 10rem;
         padding-bottom: 10rem;
     }
-
 </style>
-
 <body>
     <?php include "Header.php"; ?>
     <h1 id="title">Current Drivers</h1>
