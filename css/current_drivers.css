@@ -24,6 +24,7 @@
         .card-body {
             height: 20rem;
             width: 15rem;
+            border-radius: 5px;
         }
 
         .card-title {
@@ -43,6 +44,7 @@
 
         .card {
             transition: ease-in-out 0.3s;
+            border-radius: 10px;
         }
 
         .card:hover {
