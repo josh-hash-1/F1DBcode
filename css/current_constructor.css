@@ -9,7 +9,6 @@
   --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* General header */
 h1 {
   font-family: var(--font-family);
   text-align: center;
@@ -17,137 +16,433 @@ h1 {
   font-size: xxx-large;
 }
 
-/* General car-box styling */
-.car-box-mclaren,
-.car-box-ferrari,
-.car-box-redbull,
-.car-box-mercedes,
-.car-box-aston-martin,
-.car-box-alpine,
-.car-box-haas,
-.car-box-racing-bulls,
-.car-box-williams,
-.car-box-sauber {
+@media (max-width: 768px) {
+  .car-box-mclaren img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-mclaren {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mclaren p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .mclaren h2{
+  text-align: center;
+  color: #ff8000;
+  font-size: xx-large;
+}
+.car-box-mclaren {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  background-image: url("../images/mclarenbg.jpg");
   transition: var(--transition);
-  background-size: cover;
-  background-position: center;
+  padding: 10px 10px;
 }
 
-.car-box-mclaren img,
-.car-box-ferrari img,
-.car-box-redbull img,
-.car-box-mercedes img,
-.car-box-aston-martin img,
-.car-box-alpine img,
-.car-box-haas img,
-.car-box-racing-bulls img,
-.car-box-williams img,
-.car-box-sauber img {
-  width: 100%;
-  height: auto;
+.car-box-mclaren:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
 }
 
-.car-box-mclaren:hover,
-.car-box-ferrari:hover,
-.car-box-redbull:hover,
-.car-box-mercedes:hover,
-.car-box-aston-martin:hover,
-.car-box-alpine:hover,
-.car-box-haas:hover,
-.car-box-racing-bulls:hover,
-.car-box-williams:hover,
-.car-box-sauber:hover {
+@media (max-width: 768px) {
+  .car-box-ferrari img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-ferrari {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ferrari p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .ferrari h2{
+  text-align: center;
+  color: #ff0000;
+  font-size: xx-large;
+}
+.car-box-ferrari {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/ferraribg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+}
+
+.car-box-ferrari:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-redbull img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-redbull {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .redbull p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+.car-box-redbull {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/redbullbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+}
+
+.car-box-redbull:hover {
   background-color: var(--f1-dark);
   transform: scale(1.02);
 }
 
-/* General car-box paragraph */
-.car-box p {
-  padding: 30px 20px;
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 1.2rem;
+body .redbull h2{
+  text-align: center;
+  color: #444899;
+  font-size: xx-large;
 }
 
-/* Team-specific background images and colors */
-.car-box-mclaren { background-image: url("../images/mclarenbg.jpg"); }
-body .mclaren h2 { color: #ff8000; }
-
-.car-box-ferrari { background-image: url("../images/ferraribg.jpg"); }
-body .ferrari h2 { color: #ff0000; }
-
-.car-box-redbull { background-image: url("../images/redbullbg.jpg"); }
-body .redbull h2 { color: #444899; }
-
-.car-box-mercedes { background-image: url("../images/mercedesbg.jpg"); }
-body .mercedes h2 { color: #8adfcb; }
-
-.car-box-aston-martin { 
-  background-image: url("../images/astonmartinbg.jpg");
-  image-rendering: crisp-edges;
-}
-body .aston-martin h2 { color: #496f46; }
-
-.car-box-alpine { 
-  background-image: url("../images/alpinebg.jpg"); 
-  image-rendering: crisp-edges;
-}
-body .alpine h2 { color: #D96D84; }
-
-.car-box-haas { 
-  background-image: url("../images/haasbg.jpg"); 
-  image-rendering: crisp-edges;
-}
-body .haas h2 { color: #cacaca; }
-
-.car-box-racing-bulls { 
-  background-image: url("../images/racingbullsbg.jpg"); 
-  image-rendering: crisp-edges;
-}
-body .racing-bulls h2 { color: #6d7cff; }
-
-.car-box-williams { 
-  background-image: url("../images/williamsbg.jpg"); 
-  image-rendering: crisp-edges;
-}
-body .williams h2 { color: #6d7cff; }
-
-.car-box-sauber { 
-  background-image: url("../images/kicksauberbg.jpg"); 
-  image-rendering: crisp-edges;
-}
-body .sauber h2 { color: #00ff00; }
-
-/* Responsive for mobile */
 @media (max-width: 768px) {
-  .car-box-mclaren,
-  .car-box-ferrari,
-  .car-box-redbull,
-  .car-box-mercedes,
-  .car-box-aston-martin,
-  .car-box-alpine,
-  .car-box-haas,
-  .car-box-racing-bulls,
-  .car-box-williams,
-  .car-box-sauber {
-    padding: 5px;
+  .car-box-mercedes img {
+    width: 100%;
+    height: auto;
   }
 
-  .mclaren p,
-  .ferrari p,
-  .redbull p,
-  .mercedes p,
-  .aston-martin p,
-  .alpine p,
-  .haas p,
-  .racing-bulls p,
-  .williams p,
+  .car-box-mercedes {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mercedes p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .mercedes h2{
+  text-align: center;
+  color: #8adfcb;
+  font-size: xx-large;
+}
+.car-box-mercedes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/mercedesbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+}
+
+.car-box-mercedes:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-aston-martin img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-aston-martin {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .aston-martin p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .aston-martin h2{
+  text-align: center;
+  color: #496f46;
+  font-size: xx-large;
+}
+.car-box-aston-martin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/astonmartinbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+  image-rendering: crisp-edges;
+}
+
+.car-box-aston-martin:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-alpine img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-alpine {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .alpine p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .alpine h2{
+  text-align: center;
+  color: #D96D84;
+  font-size: xx-large;
+}
+.car-box-alpine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/alpinebg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+  image-rendering: crisp-edges;
+}
+
+.car-box-alpine:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-haas img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-haas {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .haas p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .haas h2{
+  text-align: center;
+  color: #cacaca;
+  font-size: xx-large;
+}
+.car-box-haas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/haasbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+  image-rendering: crisp-edges;
+}
+
+.car-box-haas:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-racing-bulls img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-racing-bulls {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .racing-bulls p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .racing-bulls h2{
+  text-align: center;
+  color: #6d7cff;
+  font-size: xx-large;
+}
+.car-box-racing-bulls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/racingbullsbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+  image-rendering: crisp-edges;
+}
+
+.car-box-racing-bulls:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-williams img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-williams {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .williams p {
+    padding: 10% 5%;
+    font-size: large;
+  }
+}
+
+body .williams h2{
+  text-align: center;
+  color: #6d7cff;
+  font-size: xx-large;
+}
+.car-box-williams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/williamsbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+  image-rendering: crisp-edges;
+}
+
+.car-box-williams:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .car-box-sauber img {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-box-sauber {
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+
   .sauber p {
     padding: 10% 5%;
     font-size: large;
   }
+}
+
+body .sauber h2{
+  text-align: center;
+  color: #00ff00;
+  font-size: xx-large;
+}
+.car-box-sauber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/kicksauberbg.jpg");
+  transition: var(--transition);
+  padding: 10px 10px;
+  image-rendering: crisp-edges;
+}
+
+.car-box-sauber:hover {
+  background-color: var(--f1-dark);
+  transform: scale(1.02);
+}
+p{
+  padding: 5% 20%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: x-large;
 }

@@ -150,9 +150,7 @@
         </p>
     </div>
 </div>
-<div class="footer">
-    <?php include "Footer.php"; ?>
-</div>
+
     
 </body>
 
