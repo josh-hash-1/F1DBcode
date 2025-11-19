@@ -146,6 +146,6 @@ body {
         </ul>
       </li>
       <li class="right"><a href="#">About Us</a></li>
-      <li class="right2"><a href="#">Account</a></li>
+      <li class="right2"><a href="user-processing/signup.php">Account</a></li>
     </ul>
   </nav>
