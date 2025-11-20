@@ -1,3 +1,81 @@
 :root{
+    --f1-red: #e10600;
+    --f1-dark: #0d0d0d;
+    --f1-grey: #1b1b1b;
+    --f1-light: #f5f5f5;
+    --f1-hover: #b30000;
+    --transition: all 0.3s ease;
+    --header-color: #b9b9b9;
+    --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+footer {
+    background-color: var(--f1-grey);
+    margin-top: auto; /* Push footer to bottom if using flexbox layout */
+    border-top: 3px solid var(--f1-red); /* F1 red accent stripe */
+}
+
+.footer-bar {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-bar .options {
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Changed from column to row */
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bar .options li {
+    margin: 0;
+}
+
+.footer-bar .options a {
+    color: var(--header-color);
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.footer-bar .options a:hover {
+    color: var(--f1-light);
+    background-color: var(--f1-red);
+    transform: translateY(-2px);
+}
+
+.footer-bar .options a:active {
+    background-color: var(--f1-hover);
+    transform: translateY(0);
+}
+
+/* Optional: Add copyright or additional info styling */
+.footer-bar .copyright {
+    margin-top: 20px;
+    color: var(--header-color);
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .footer-bar .options {
+        flex-direction: column;
+        gap: 15px;
+    }
     
+    .footer-bar {
+        padding: 20px 10px;
+    }
 }
