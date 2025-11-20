@@ -1,13 +1,3 @@
-:root {
-  --f1-red: #e10600;
-  --f1-dark: #0d0d0d;
-  --f1-grey: #1b1b1b;
-  --f1-light: #f5f5f5;
-  --f1-hover: #b30000;
-  --transition: all 0.3s ease;
-  --header-color: #b9b9b9;
-  --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
 
 /* Reset defaults */
 * {
@@ -71,7 +61,7 @@ header, footer {
   display: inline-block;
   margin: 0 1rem;
   padding: 1rem 2rem;
-  background-color: var(--f1-red);
+  background-color: var(--f1-main);
   color: var(--f1-light);
   font-size: 1.2rem;
   border: none;
@@ -115,13 +105,13 @@ header, footer {
 
 .feature:hover {
   transform: translateY(-5px);
-  background-color: var(--f1-red);
+  background-color: var(--f1-main);
   color: var(--f1-light);
 }
 
 .feature h3 {
   margin-bottom: 1rem;
-  color: var(--f1-red);
+  color: var(--f1-main);
 }
 
 .feature:hover h3 {

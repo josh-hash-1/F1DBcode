@@ -1,0 +1,26 @@
+/* ========================================= */
+/* Global Variables to be applied everywhere */
+/* ========================================= */
+
+:root {
+    --f1-main: #e10600;
+    --f1-dark: #0d0d0d;
+    --f1-grey: #1b1b1b;
+    --f1-light: #f5f5f5;
+    --f1-hover: #b30000;
+    --transition: all 0.3s ease;
+    --header-color: #b9b9b9;
+    --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Team Specific Colors */
+    --f1-mclaren: #FF5800;      /* Papaya Orange */
+    --f1-ferrari: #FF2800;      /* Ferrari Red */
+    --f1-redbull: #1E41FF;      /* Dark Blue with Red accents */
+    --f1-mercedes: #00D2BE;     /* Turquoise */
+    --f1-haas: #B6BABD;         /* Silver/Grey */
+    --f1-alpine: #0090FF;       /* Alpine Blue */
+    --f1-alphatauri: #2B4562;   /* Dark Blue */
+    --f1-williams: #37BEDD;     /* Light Blue */
+    --f1-astonmartin: #006F62;  /* British Racing Green */
+    --f1-none: #e10600;
+}

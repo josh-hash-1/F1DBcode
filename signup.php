@@ -11,12 +11,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/global.css">
     <title>Sign-Up</title>
 </head>
 <body>
     <?php include "Header.php"; ?>
     <div class="form-container">
-        <form id="signup-form" action="signup-processing.php" method="POST">
+        <div class="main-content">
+            <form id="signup-form" action="signup-processing.php" method="POST">
             <h1>Sign Up</h1>
             <input required type="text" name="userEmail" class="input-field" placeholder="Enter your email">
             <input required type="password" name="userPass" class="input-field" placeholder="Enter your password">
@@ -27,17 +29,18 @@
                     <option value="RedBull">RedBull</option>
                     <option value="Ferrari">Ferrari</option>
                     <option value="Mercedes">Mercedes</option>
-                    <option value="haas">Haas</option>
-                    <option value="sauber">Sauber</option>
-                    <option value="alpine">Alpine</option>
-                    <option value="williams">Williams</option>
-                    <option value="racing bulls">Racing Bulls</option>
-                    <option value="Aston Martin">Aston Martin</option>
-                    <option selected value="N/A">None</option>
+                    <option value="Haas">Haas</option>
+                    <option value="Sauber">Sauber</option>
+                    <option value="Alpine">Alpine</option>
+                    <option value="Williams">Williams</option>
+                    <option value="RacingBulls">Racing Bulls</option>
+                    <option value="AstonMartin">Aston Martin</option>
+                    <option selected value="None">None</option>
                 </select>
             </div>
                 <button id="submitButton" >Sign-Up!</button>
         </form>
+        </div>
     </div>
     <?php include "Footer.php"; ?>
 </body>     
