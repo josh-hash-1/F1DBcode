@@ -117,7 +117,7 @@ body {
 </style>
 <nav class="navbar">
     <ul class="menu">
-      <img src="images/f1db-logo.png" height="50" width="50">
+      <img src="Images/f1db-logo.png" height="50" width="50">
       <li><a href="index.php">Home</a></li>
 
       <!-- Constructors Menu -->
@@ -146,6 +146,6 @@ body {
         </ul>
       </li>
       <li class="right"><a href="#">About Us</a></li>
-      <li class="right2"><a href="user-processing/signup.php">Account</a></li>
+      <li class="right2"><a href="signup.php">Account</a></li>
     </ul>
   </nav>
