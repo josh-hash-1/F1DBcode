@@ -37,7 +37,7 @@
         <a href="logout.php" id="logoutBtn" class="changeButton">Logout</a>
     </main>
     <script>
-        const teamSelector = document.getElementById('teamSelector');
+        const $teamSelector = document.getElementById('teamSelector');
 
         // Map of F1 teams to their main colors and hover colors
         const f1Colors = {
