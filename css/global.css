@@ -15,12 +15,13 @@
     /* Team Specific Colors */
     --f1-mclaren: #FF5800;      /* Papaya Orange */
     --f1-ferrari: #FF2800;      /* Ferrari Red */
-    --f1-redbull: #1E41FF;      /* Dark Blue with Red accents */
+    --f1-redbull: #0019aa;      /* Dark Blue with Red accents */
     --f1-mercedes: #00D2BE;     /* Turquoise */
     --f1-haas: #B6BABD;         /* Silver/Grey */
-    --f1-alpine: #0090FF;       /* Alpine Blue */
-    --f1-alphatauri: #2B4562;   /* Dark Blue */
-    --f1-williams: #37BEDD;     /* Light Blue */
+    --f1-alpine: #ef90e0;       /* Alpine Blue */
+    --f1-alphatauri: #006dea;   /* Dark Blue */
+    --f1-williams: #001aff;     /* Light Blue */
     --f1-astonmartin: #006F62;  /* British Racing Green */
+    --f1-sauber: #00ff2f;   /* Kick Green */
     --f1-none: #e10600;
 }
