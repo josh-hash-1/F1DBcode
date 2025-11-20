@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Constructors</title>
     <link rel="stylesheet" href="css/current_constructor.css">
+    
 </head>
 
 <body>
@@ -153,6 +154,16 @@
 
 </div>
     <?php include "Footer.php" ?> 
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
 
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    
+
+    <script src="javascript/script.js"></script>
+</body>
+    
 </html>
