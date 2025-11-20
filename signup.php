@@ -38,7 +38,7 @@
                     <option selected value="None">None</option>
                 </select>
             </div>
-                <button id="submitButton" >Sign-Up!</button>
+            <button id="submitButton" >Sign-Up!</button>
         </form>
         </div>
     </div>

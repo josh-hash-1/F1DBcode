@@ -25,6 +25,13 @@ main {
     flex: 1;
 }
 
+#teamSelector {
+    background-color: var(--f1-dark);
+    color: var(--f1-light);
+    text-align: center;
+    border: none;
+}
+
 .changeButton {
     width: 10rem;
     height: 3rem;

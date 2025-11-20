@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/account.css">
-    
-    <title>F1DB-My Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/account.css">
+
+<title>F1DB-My Profile</title>
 </head>
+
 <body>
     <?php include "Header.php"; ?>
 
@@ -17,10 +18,56 @@
         <h2><?php echo "My Team: " . $_SESSION['user_team']; ?></h2>
 
         <button class="changeButton">Change Password</button>
-        <button class="changeButton">Change Teams</button>
+        <div style="display: flex; flex-direction: row; gap: 1rem;">
+            <label for="teamSelector">Change Teams:</label>
+            <select name="teamSelection" id="teamSelector">
+                <option value="McLaren">McLaren</option>
+                <option value="RedBull">RedBull</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Haas">Haas</option>
+                <option value="Sauber">Sauber</option>
+                <option value="Alpine">Alpine</option>
+                <option value="Williams">Williams</option>
+                <option value="RacingBulls">Racing Bulls</option>
+                <option value="AstonMartin">Aston Martin</option>
+                <option selected value="None">None</option>
+            </select>
+        </div>
         <a href="logout.php" id="logoutBtn" class="changeButton">Logout</a>
     </main>
+    <script>
+        const teamSelector = document.getElementById('teamSelector');
 
+        // Map of F1 teams to their main colors and hover colors
+        const f1Colors = {
+            "McLaren": { main: "#FF5800", hover: "#FF7500" },
+            "Ferrari": { main: "#FF2800", hover: "#FF4040" },
+            "RedBull": { main: "#1E41FF", hover: "#405BFF" },
+            "Mercedes": { main: "#00D2BE", hover: "#33E0C9" },
+            "Haas": { main: "#B6BABD", hover: "#D0D3D5" },
+            "Sauber": { main: "#A0A0A0", hover: "#C0C0C0" },
+            "Alpine": { main: "#0090FF", hover: "#33A5FF" },
+            "Williams": { main: "#37BEDD", hover: "#5FD3EE" },
+            "RacingBulls": { main: "#AA0000", hover: "#CC3333" },
+            "AstonMartin": { main: "#006F62", hover: "#009D85" },
+            "None": { main: "#e10600", hover: "#b30000" }
+        };
+        // Function to change theme live
+        function setF1Theme(team) {
+            const color = f1Colors[team];
+            if (!color) return;
+
+            document.documentElement.style.setProperty('--f1-main', color.main);
+            document.documentElement.style.setProperty('--f1-hover', color.hover);
+        }
+
+        // Listen for changes in the selector
+        teamSelector.addEventListener('change', (e) => {
+            setF1Theme(e.target.value);
+        });
+    </script>
     <?php include "Footer.php"; ?>
 </body>
+
 </html>
