@@ -9,39 +9,53 @@
     <link rel="stylesheet" href="css/current_drivers.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<style>
-    .placeholder {
-        background-color: transparent !important;
 
-        img {
-            filter: brightness(100%);
-            opacity: 1.5;
-        }
-    }
-
-    .main {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-    }
-</style>
 <body>
-    <?php include "Header.php"; ?>
-    <h1 id="title">Current Drivers</h1>
-    <div class="main">
-        <div class="container my-4">
-            <?php include "reusable/card.php"; ?>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" style="max-height: 80%;">
-                <?php
-                makeCard("Lando Norris","mclaren", "1st with 390 season points", "images/lando_norris_headshot.png","images/mclarenbg.jpg");
-                makeCard("Oscar Piastri","mclaren","2nd with 366 season points", "images/oscar_piastri_headshot.png","images/mclarenbg.jpg");
-                makeCard("Max Verstappen", "redbull","3rd with 341 season points", "images/max_verstappen_headshot.png","images/redbullbg.jpg");
-                ?>
+    <?php include "Header.php";
+    include "reusable/card.php"; ?>
+    <div class="main container">
+        <div class="row justify-content-center g-4">
+            <!-- McLaren -->
+            <div class="col-md-6">
+                <?php makeCard("Lando Norris", "British driver racing for McLaren with car #4", "Images\lando_norris_headshot.png", "Images\mclarenbg.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Oscar Piastri", "Australian driver racing for McLaren with car #81", "Images\oscar_piastri_headshot.png", "Images\mclarenbg.jpg"); ?>
+            </div>
+            <!-- RedBull -->
+            <div class="col-md-6">
+                <?php makeCard("Max Verstappen", "Dutch driver racing for RedBull Racing with car #1", "Images\max_verstappen_headshot.png", "Images\redbullbg.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Yuki Tsunodac", "Japanese driver racing for RedBull Racing with car #22", "Images\yuki_headshot.png", "Images\redbullbg.jpg"); ?>
+            </div>
+            <!-- Mercedes -->
+            <div class="col-md-6">
+                <?php makeCard("George Russell", "British driver racing for Mercedes Racing with car #63", "Images\george_russell_headshot.png", "Images\mercedes.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Kimi Antonelli", "Italian driver racing for Mercedes Racing with car #12", "Images\antonelli_headshot.png", "Images\mercedes.jpg"); ?>
+            </div>
+            <!-- Ferrari -->
+            <div class="col-md-6">
+                <?php makeCard("Lewis Hamilton", "British driver racing for Ferrari with car #44", "Images\hamilton_headshot.png", "Images\ferraribg.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Charles Leclerc", "French driver racing for Ferrari with car #16", "Images\leclerc_headshot.png", "Images\ferraribg.jpg"); ?>
+            </div>
+            <!-- Williams -->
+            <div class="col-md-6">
+                <?php makeCard("Alexander Albon", "Thai driver racing for Williams with car #23", "Images\albon_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Carlos Sainz", "Spanish driver racing for Williams with car #55", "Images\sainz_headshot.png", "Images\williamsbg.jpg"); ?>
             </div>
         </div>
-
     </div>
-
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="javascript/script.js"></script>
     <?php include "Footer.php"; ?>
 </body>
 

@@ -1,52 +1,68 @@
-        :root {
-            --f1-red: #e10600;
-            --f1-dark: #0d0d0d;
-            --f1-grey: #1b1b1b;
-            --f1-light: #f5f5f5;
-            --f1-hover: #b30000;
-            --transition: all 0.3s ease;
-            --header-color: #b9b9b9;
-            --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        }
+:root {
+    --f1-red: #e10600;
+    --f1-dark: #0d0d0d;
+    --f1-grey: #1b1b1b;
+    --f1-light: #f5f5f5;
+    --f1-hover: #b30000;
+    --transition: all 0.3s ease;
+    --header-color: #b9b9b9;
+    --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
 
-        body {
-            text-align: center;
-            font-family: var(--font-family);
-            padding-top: 100px;   /* height of header */
-            padding-bottom: 100px; /* height of footer */
-        }
+/* GLOBAL */
+body {
+    text-align: center;
+    font-family: var(--font-family);
+    background: var(--f1-dark);
+    color: var(--f1-light);
+    margin: 0;
+}
 
-        #title {
-            padding-top: 3rem;
-            color: var(--header-color);
-        }
+/* Main container - uses min-height to allow content to expand */
+.main {
+    padding: 2rem 0;
+    min-height: 100vh;
+}
 
-        .card-body {
-            height: 20rem;
-            width: 15rem;
-            border-radius: 5px;
-        }
+/* Driver card styling */
+.driver {
+    transition: background 0.3s ease-in-out;
+    height: 100%;
+    min-height: 25rem;
+    width: 100%;
+    background-color: var(--f1-grey);
+    color: var(--f1-light);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
 
-        .card-title {
-            font-weight: bold;
-        }
+/* Background image effect on hover */
+.driver:hover {
+    background-size: cover;
+    background-position: center;
+}
 
-        .btn-danger {
-            width: 80%;
-            background-color: #e10600;
-            border: none;
-        }
+.driver a {
+    transition: var(--transition);
+}
 
-        .placeholder {
-            width: 10rem;
-            height: 15rem;
-        }
+.driver a:hover {
+    transform: scale(1.01);
+}
 
-        .card {
-            transition: ease-in-out 0.3s;
-            border-radius: 10px;
-        }
-
-        .card:hover {
-            transform: scale(1.1);
-        }
+/* Driver headshot image */
+.driver img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: var(--f1-grey);
+    pointer-events: none;
+    opacity: 1;
+}

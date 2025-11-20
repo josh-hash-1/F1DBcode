@@ -97,6 +97,7 @@ header, footer {
   padding: 4rem 2rem;
   background-color: var(--f1-dark);
   color: var(--f1-light);
+  text-decoration: none;
   width: 100%;
 }
 
@@ -107,19 +108,37 @@ header, footer {
   max-width: 300px;
   text-align: center;
   border-radius: 15px;
+  text-decoration: none;
   transition: var(--transition);
+  color: var(--f1-red);
 }
 
 .feature:hover {
   transform: translateY(-5px);
   background-color: var(--f1-red);
+  color: var(--f1-light);
 }
 
 .feature h3 {
   margin-bottom: 1rem;
+  color: var(--f1-red);
+}
+
+.feature:hover h3 {
   color: var(--f1-light);
 }
 
 .feature p {
   font-size: 1rem;
+}
+
+.title-div {
+  padding: 2rem;
+}
+
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }

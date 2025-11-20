@@ -1,26 +1,9 @@
 <?php
-function makeCard($name,$class, $info, $imgPath, $imgBg) {
-
-    echo"
-        <style>
-
-            .$class {
-                transition: background ease-in-out 0.3s;
-                height: 25rem;
-                width: 20rem;
-            }
-
-            .$class:hover {
-                background-image: url($imgBg);
-            }
-
-        </style>
-    ";
-
+function makeCard($name, $info, $imgPath, $imgBg) {
     echo "
         <div class='col'>
-            <div class='$class' style='background-color: #1b1b1b; color: #f5f5f5;'>
-                <div class='card-body d-flex flex-column justify-content-between'>
+            <div class='driver' style='background-image: url(\"$imgBg\")'>
+                <div id='card-vanity' class='card-body d-flex flex-column justify-content-between'>
                     <h5 class='card-title text-danger'>$name</h5>
                     <img src='$imgPath' class='placeholder' alt='$name'>
                     <p class='card-text'>$info</p>
@@ -30,5 +13,4 @@ function makeCard($name,$class, $info, $imgPath, $imgBg) {
         </div>
     ";
 }
-
 ?>
