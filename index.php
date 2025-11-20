@@ -13,22 +13,22 @@
 <body>
   <?php include "Header.php"; ?>
 
-  <!-- <div class="main" style="height: 100vh">
-      <div class="intro-bg"></div>
-  </div> -->
   <div class="main-container">
     <section class="hero">
-      <!-- <h2>Welcome to F1DB!</h2> -->
       <img src="f1db-logo.png" alt="F1DB logo" style="width: 10rem; height: 10rem;">
       <div class="title-div">
         <p class="hero-title">Track your favorite</p>
         <p class="hero-title">teams - drivers - stats</p>
         <p class="hero-title">all in one place.</p>
       </div>
-      <a href="signup.php" class="btn">Sign Up</a>
-      <a href="login.php" class="btn">Log In</a>
+      <?php
+        if(!isset($_SESSION['user_email'])){
+          echo "<a href='signup.php' class='btn'>Sign Up</a>";
+          echo "<a href='login.php' class='btn'>Log In</a>";
+        }
+      ?>
     </section>
-    <section class="features">
+    <div class="features">
       <a href="drivers_current.php" class="feature">
         <h3>Drivers</h3>
         <p>Explore driver profiles and stats.</p>
@@ -41,7 +41,7 @@
         <h3>Standings</h3>
         <p>Stay up-to-date with current race standings.</p>
       </a>
-    </section>
+    </div>
   </div>
   <?php include "Footer.php"; ?>
 </body>
