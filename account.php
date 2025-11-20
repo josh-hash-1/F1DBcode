@@ -9,13 +9,14 @@
 </head>
 <body>
     <?php include "Header.php"; ?>
-    <div class="main-container">
+    <main class="main-container">
         <h1>My Account</h1>
         <h2><?php echo "Email: " . $_SESSION['user_email']; ?></h2>
         <h2><?php echo "My Team: " . $_SESSION['user_team']; ?></h2>
         <button class="changeButton">Change Password</button>
         <button class="changeButton">Change Teams</button>
-    </div>
+        <a href="logout.php" id="logoutBtn" class="changeButton">Logout</a>
+    </main>
     <?php include "Footer.php"; ?>
 </body>
 </html>
