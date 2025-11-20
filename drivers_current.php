@@ -28,7 +28,7 @@
                 <?php makeCard("Max Verstappen", "Dutch driver racing for RedBull Racing with car #1", "Images\max_verstappen_headshot.png", "Images\redbullbg.jpg"); ?>
             </div>
             <div class="col-md-6">
-                <?php makeCard("Yuki Tsunodac", "Japanese driver racing for RedBull Racing with car #22", "Images\yuki_headshot.png", "Images\redbullbg.jpg"); ?>
+                <?php makeCard("Yuki Tsunoda", "Japanese driver racing for RedBull Racing with car #22", "Images\yuki_headshot.png", "Images\redbullbg.jpg"); ?>
             </div>
             <!-- Mercedes -->
             <div class="col-md-6">

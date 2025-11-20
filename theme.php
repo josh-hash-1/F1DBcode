@@ -7,10 +7,11 @@ function getF1TeamColor($team) {
         "RedBull" => "#1E41FF",
         "Mercedes" => "#00D2BE",
         "Haas" => "#B6BABD",
-        "Alpine" => "#0090FF",
+        "Alpine" => "#ef90e0",
         "AlphaTauri" => "#2B4562",
         "Williams" => "#37BEDD",
         "AstonMartin" => "#006F62",
+        "Sauber"=> "#00ff2f",
         "None" => "#e10600"
     ];
     return $colors[$team] ?? "#e10600";
@@ -24,10 +25,11 @@ function getF1TeamHoverColor($team) {
         "RedBull" => "#152FCB",
         "Mercedes" => "#00A899",
         "Haas" => "#989C9F",
-        "Alpine" => "#0072CC",
+        "Alpine" => "#ef90e0",
         "AlphaTauri" => "#213A52",
         "Williams" => "#2EA0BB",
         "AstonMartin" => "#00554F",
+        "Sauber"=> "#21c23fff",
         "None" => "#B30000"
     ];
     return $hoverColors[$team] ?? "#B30000";
