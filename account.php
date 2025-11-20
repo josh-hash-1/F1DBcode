@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +8,14 @@
     <title>F1DB-My Profile</title>
 </head>
 <body>
-    <?php include "Header.php"; session_start(); ?>
+    <?php include "Header.php"; ?>
     <div class="main-container">
         <h1>My Account</h1>
-        <h2><?php  ?></h2>
-        <h2>My Team: </h2>
+        <h2><?php echo "Email: " . $_SESSION['user_email']; ?></h2>
+        <h2><?php echo "My Team: " . $_SESSION['user_team']; ?></h2>
         <button class="changeButton">Change Password</button>
         <button class="changeButton">Change Teams</button>
     </div>
+    <?php include "Footer.php"; ?>
 </body>
 </html>

@@ -10,4 +10,7 @@
     $_SESSION["user_email"] = $email;
     $_SESSION["user_password"] = $encpass;
     $_SESSION["user_team"] = $teamChoice;
+
+    header("Location: account.php");
+    exit();
 ?>
