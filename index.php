@@ -17,9 +17,9 @@
     <section class="hero">
       <img src="f1db-logo.png" alt="F1DB logo" style="width: 10rem; height: 10rem;">
       <div class="title-div">
-        <p class="hero-title">Track your favorite</p>
-        <p class="hero-title">teams - drivers - stats</p>
-        <p class="hero-title">all in one place.</p>
+        <p>Track your favorite</p>
+        <p>teams - drivers - stats</p>
+        <p>all in one place.</p>
       </div>
       <?php
         if(!isset($_SESSION['user_email'])){
