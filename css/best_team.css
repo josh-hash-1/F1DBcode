@@ -1,3 +1,19 @@
 .full-page {
     font-family: var(--font-family);
 }
+.Ferrari p{
+    display: flex;
+    justify-content: center;
+    padding: 0 250px;
+    text-align:center;
+
+}
+.Ferrari img{
+    margin: 0px 50px;
+}
+.left-img{
+    float: left;
+}
+.right-img{
+    float: right;
+}
