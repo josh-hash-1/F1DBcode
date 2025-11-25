@@ -2,8 +2,8 @@
 // Database credentials
 $host = "10.70.211.5";
 $dbname = "f1_db";
-$username = "root";
-$password = "";
+$username = "Worker";
+$password = "joshIsFat";
 try {
 // Create PDO connection
 $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username,$password);
