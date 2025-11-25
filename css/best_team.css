@@ -1,3 +1,11 @@
-.full-page {
-    font-family: var(--font-family);
+/* Test if file is loading at all */
+body {
+    background-color: yellow !important; /* temporary test */
+}
+
+.Ferrari p {
+    background-color: red !important;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
