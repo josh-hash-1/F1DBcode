@@ -21,6 +21,25 @@
                     the sport’s most iconic and successful teams.
                 </p>
             </div>
+            <div class="Mclaren">
+                <h2>McLaren</h2>
+                <img src="images/mclaren-logo.png" height="240" widht="auto">
+                <p>
+                    McLaren is one of the most successful teams in Formula 1 history, with 12 
+                    Constructors' Championships
+
+            </div>
+            <div class="Mercedes">
+                <h2>Mercedes</h2>
+                <img src="images/mercedes-logo.png" height="240" widht="auto">
+                <p>
+                    Mercedes has been a dominant force in Formula 1, especially in the turbo-hybrid 
+                    era starting from 2014. They have secured multiple Constructors' Championships 
+                    and have been home to some of the sport's most successful drivers.
+                </p>
+            </div>
+            
+
     </div>
 </body>
 </html>
