@@ -1,3 +1,29 @@
+<?php
+session_start();
+include("db_connect.php");
+include("reusable/alert.php");
+
+if (isset($_POST['teamSelection'])) {
+    $newTeam = $_POST['teamSelection'];
+    $userID = $_SESSION['userID'];
+
+    try {
+        $stmt = $pdo->prepare("UPDATE users SET team_id =
+        (SELECT team_id FROM teams WHERE team_name = :teamName)
+        WHERE user_id = :userID");
+        $stmt->execute([
+            ':teamName' => $newTeam,
+            ':userID' => $userID
+        ]);
+    }
+    catch (PDOException $e) {
+        jsAlert('Error updating database.');
+    }
+
+    $_SESSION['userTeam'] = $newTeam;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -18,7 +44,7 @@
         <h2><?php echo "My Team: " . $_SESSION['userTeam']; ?></h2>
 
         <button class="changeButton">Change Password</button>
-        <div style="display: flex; flex-direction: row; gap: 1rem;">
+        <form style="display: flex; flex-direction: row; gap: 1rem;" method="POST" id="teamForm">
             <label for="teamSelector">Change Teams:</label>
             <select name="teamSelection" id="teamSelector">
                 <option value="McLaren">McLaren</option>
@@ -33,7 +59,8 @@
                 <option value="AstonMartin">Aston Martin</option>
                 <option selected value="None">None</option>
             </select>
-        </div>
+            <button type="submit" class="changeButton">Confirm Change</button>
+        </form>
         <a href="logout.php" id="logoutBtn" class="changeButton">Logout</a>
     </main>
     <?php include "Footer.php"; ?>
