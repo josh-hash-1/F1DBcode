@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if (isset($_SESSION['user_email'])) {
+    if (isset($_SESSION['userEmail'])) {
     header("Location: account.php");
     exit();
 }
@@ -18,7 +18,7 @@
     <?php include "Header.php"; ?>
     <div class="form-container">
         <div class="main-content">
-            <form id="signup-form" action="signup-processing.php" method="POST">
+            <form id="signup-form" action="process_signup.php" method="POST">
             <h1>Sign Up</h1>
             <input required type="text" name="userEmail" class="input-field" placeholder="Enter your email">
             <input required type="password" name="userPass" class="input-field" placeholder="Enter your password">
@@ -33,7 +33,7 @@
                     <option value="Sauber">Sauber</option>
                     <option value="Alpine">Alpine</option>
                     <option value="Williams">Williams</option>
-                    <option value="RacingBulls">Racing Bulls</option>
+                    <option value="RacingBalls">Racing Bulls</option>
                     <option value="AstonMartin">Aston Martin</option>
                     <option selected value="None">None</option>
                 </select>

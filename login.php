@@ -1,9 +1,9 @@
 <?php
     session_start();
     if (isset($_SESSION['user_email'])) {
-    header("Location: account.php");
-    exit();
-}
+        header("Location: account.php");
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@
     <?php include "Header.php"; ?>
     <div class="form-container">
         <div class="main-content">
-            <form id="signup-form" action="signup-processing.php" method="POST">
+            <form id="signup-form" action="login_process.php" method="POST">
             <h1>Login</h1>
             <input required type="text" name="userEmail" class="input-field" placeholder="Enter your email">
             <input required type="password" name="userPass" class="input-field" placeholder="Enter your password">

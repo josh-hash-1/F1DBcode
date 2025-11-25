@@ -36,7 +36,7 @@ function getF1TeamHoverColor($team) {
 }
 
 // Get user team from session
-$userTeam = $_SESSION['user_team'] ?? "None";
+$userTeam = $_SESSION['userTeam'] ?? "None";
 $mainColor = getF1TeamColor($userTeam);
 $hoverColor = getF1TeamHoverColor($userTeam);
 
