@@ -15,6 +15,7 @@
     <?php include "Header.php";
     include "reusable/card.php"; ?>
     <div class="main container">
+        <!-- Drivers and their respective teams -->
         <div class="row justify-content-center g-4">
             <!-- McLaren -->
             <div class="col-md-6">
@@ -50,6 +51,27 @@
             </div>
             <div class="col-md-6">
                 <?php makeCard("Carlos Sainz", "Spanish driver racing for Williams with car #55", "Images\sainz_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <!-- Racing Bulls -->
+            <div class="col-md-6">
+                <?php makeCard("Liam Lawson", "New Zealand driver racing for RacingBulls with car #30", "Images\lawson_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Isack Hadjar", "French driver racing for RacingBulls with car #6", "Images\hadjar_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <!-- Haas -->
+            <div class="col-md-6">
+                <?php makeCard("Esteban Ocon", "French driver racing for Haas with car #31", "Images\ocon_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Oliver Bearman", "British driver racing for Haas with car #87", "Images\bearman_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <!-- Aston Martin -->
+            <div class="col-md-6">
+                <?php makeCard("Lance Stroll", "Canadian driver racing for Aston Martin with car #18", "Images\stroll_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Fernando Alonso", "Spanish driver racing for Aston Martin with car #14", "Images\alonso_headshot.png", "Images\williamsbg.jpg"); ?>
             </div>
         </div>
     </div>
