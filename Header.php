@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="css/header_styles.css">
+<!-- Icon at the top of each page with the document title -->
+<link rel="icon" type="img/png" href="f1db-logo.png">
 <?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
