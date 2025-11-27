@@ -11,7 +11,7 @@ function getF1TeamColor($team) {
         "AlphaTauri" => "#2B4562",
         "Williams" => "#37BEDD",
         "AstonMartin" => "#006F62",
-        "Sauber"=> "#00ff2f",
+        "KickSauber"=> "#00ff2f",
         "None" => "#e10600"
     ];
     return $colors[$team] ?? "#e10600";
@@ -29,7 +29,7 @@ function getF1TeamHoverColor($team) {
         "AlphaTauri" => "#213A52",
         "Williams" => "#2EA0BB",
         "AstonMartin" => "#00554F",
-        "Sauber"=> "#21c23fff",
+        "KickSauber"=> "#21c23fff",
         "None" => "#B30000"
     ];
     return $hoverColors[$team] ?? "#B30000";

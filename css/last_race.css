@@ -35,6 +35,11 @@ table td {
     padding: 1rem;
 }
 
+hr {
+    margin: 2rem auto;
+    width: 80%;
+}
+
 .raceInfoHeader {
     padding: 1.5rem;
 }

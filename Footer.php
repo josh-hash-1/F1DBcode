@@ -4,8 +4,15 @@
         <ul class="options">
             <li><a href="about.php">About Us</a></li>
             <li><a href="index.php">Home</a></li>
-            <?php if(!isset($_SESSION['userEmail'])) { echo "<li><a href='login.php'>Login</a></li>"; } ?>
-            <?php if(isset($_SESSION['userEmail'])) { echo "<li><a href='logout.php'>Logout</a></li>"; } ?>
+            <?php if(!isset($_SESSION['userEmail']))
+                { 
+                    echo "<li><a href='login.php'>Login</a></li>";
+                    echo "<li><a href='signup.php'>Sign-Up</a></li>";
+                }
+                else{
+                    echo "<li><a href='logout.php'>Logout</a></li>";
+                }
+                ?>
         </ul>
     </div>
 </footer>

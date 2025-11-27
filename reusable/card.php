@@ -15,30 +15,41 @@ function makeCard($name, $info, $imgPath, $imgBg)
     ";
 }
 
-function makeRaceCard($driverName, $driverPos, $driverTeam)
+function makeRaceCard($driverName, $driverPos, $driverTeam,$myTeam)
 {
     $teamColor = getF1Color($driverTeam);
-    echo "
+
+    if($myTeam === true) {
+        echo "
+        <tr>
+            <td style='color: #FFF3A3;'>$driverPos</td>
+            <td style='color: #FFF3A3;'>$driverName</td>
+            <td><div style='width:25px; height:25px; background-color:$teamColor; border-radius:4px;'></div></td>
+        </tr>
+        ";
+    } else {
+        echo "
         <tr>
             <td>$driverPos</td>
             <td>$driverName</td>
             <td><div style='width:25px; height:25px; background-color:$teamColor; border-radius:4px;'></div></td>
         </tr>
-    ";
+        ";
+    }
 }
 
 function getF1Color($team) {
     $colors = [
         "mclaren" => "#FF5800",
         "ferrari" => "#FF2800",
-        "red bull" => "#1E41FF",
+        "redbull" => "#1E41FF",
         "mercedes" => "#00D2BE",
         "haas" => "#B6BABD",
         "alpine" => "#ef90e0",
         "williams" => "#37BEDD",
-        "racing bulls" => "#213A52",
-        "aston martin" => "#006F62",
-        "kick sauber"=> "#00ff2f",
+        "racingbulls" => "#213A52",
+        "astonmartin" => "#006F62",
+        "kicksauber"=> "#00ff2f",
     ];
     return $colors[$team] ?? "#ffffffff";
 }

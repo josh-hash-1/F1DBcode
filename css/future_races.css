@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+
+.race-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 3rem;
+    width: 55rem;
+    height: 9rem;
+    background-color: var(--f1-grey);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.race-div:hover {
+    /* rgb(125, 125, 125) */
+    transform: translateY(-10px);
+    background-color: var(--f1-hover);
+    color: rgb(255, 255, 255);
+}
+
+.inner-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}

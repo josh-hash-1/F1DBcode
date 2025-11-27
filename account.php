@@ -80,7 +80,7 @@ function chooseTeam($teamSelection)
                 <option value="Ferrari">Ferrari</option>
                 <option value="Mercedes">Mercedes</option>
                 <option value="Haas">Haas</option>
-                <option value="Sauber">Sauber</option>
+                <option value="KickSauber">Sauber</option>
                 <option value="Alpine">Alpine</option>
                 <option value="Williams">Williams</option>
                 <option value="RacingBalls">Racing Bulls</option>

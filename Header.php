@@ -43,10 +43,10 @@ if (!in_array($currentPage, $excludeTheme)) {
         <a href="#">Races ▾</a>
         <ul class="submenu">
           <li><a href="last_race.php">Last Race</a></li>
-          <li><a href="upcoming_race.php">Future Races</a></li>
+          <li><a href="future_races.php">Upcoming Races</a></li>
         </ul>
       </li>
       <li class="right"><a href="#">About Us</a></li>
-      <li class="right2"><a href="signup.php">Account</a></li>
+      <li class="right2"><a href="login.php">Account</a></li>
     </ul>
   </nav>

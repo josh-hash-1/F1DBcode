@@ -1,9 +1,9 @@
 <?php
 // Database credentials
-$host = "10.70.210.184"; // use local IP
+$host = "localhost"; // use local IP
 $dbname = "f1_db";
-$username = "Worker"; // Worker
-$password = "joshIsFat"; // joshIsFat
+$username = "root"; // Worker
+$password = ""; // joshIsFat
 try {
 // Create PDO connection
 $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username,$password);
