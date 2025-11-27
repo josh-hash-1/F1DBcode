@@ -8,7 +8,7 @@
     color: var(--f1-main);
 }
 
-.Ferrari, .Mclaren {
+.Ferrari, .Mclaren, .Mercedes, .RedBull, .Williams, .Lotus {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,28 +16,165 @@
     padding: 0 20px;
 }
 
-.Ferrari h2, .Mclaren h2 {
+.Ferrari h2, .Mclaren h2, .Mercedes h2, .RedBull h2, .Williams h2, .Lotus h2 {
     text-align: center;
     width: 100%;
     font-size: xx-large;
+    letter-spacing: 3px;
 }
 
-.Ferrari p, .Mclaren p {
+.Ferrari p, .Mclaren p, .Mercedes p, .RedBull p, .Williams p, .Lotus p {
     text-align: center;
     max-width: 600px;
     width: 100%;
+    font-size: 17px;
 }
 
-
-.Ferrari .image-container, .Mclaren .image-container {
+.Ferrari .image-container, .Mclaren .image-container, .Mercedes .image-container, .RedBull .image-container, .Williams .image-container, .Lotus .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
 }
+/* Ferrari only section */
+.Ferrari .image-container {
+    border-radius: 30px;
+    border-color: var(--f1-ferrari);
+    background-color: #630000;
+    border-width: 3px;
+    border-style: solid;
+    margin: 30px;
+    padding: 20px 0px;
+}
+.Ferrari h2 {
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: var(--f1-ferrari);
+    background-color: #630000;
+    max-width: 10%;
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--f1-ferrari);
+    color: var(--f1-ferrari);
+}
+/* Ferrari only section */
 
+/* Mclaren only section */
+.Mclaren .image-container {
+    border-radius: 30px;
+    border-color: var(--f1-mclaren);
+    background-color: #804200;
+    border-width: 3px;
+    border-style: solid;
+    margin: 30px;
+    padding: 20px 0px;
+}
+.Mclaren h2 {
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: var(--f1-mclaren);
+    background-color: #804200;
+    max-width: 12%;
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--f1-mclaren);
+    color: #ff9b04;
+}
+/* Mclaren only section */
+
+/* Mercedes only section */
+.Mercedes .image-container {
+    border-radius: 30px;
+    border-color: var(--f1-mercedes);
+    background-color: #006155;
+    border-width: 3px;
+    border-style: solid;
+    margin: 30px;
+    padding: 20px 0px;
+}
+.Mercedes h2 {
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: var(--f1-mercedes);
+    background-color: #006155;
+    max-width: 13%;
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--f1-mercedes);
+    color: var(--f1-mercedes);
+}
+/* Mercedes only section */
+
+/* RedBull only section */
+.RedBull .image-container {
+    border-radius: 30px;
+    border-color: var(--f1-redbull);
+    background-color: #000251;
+    border-width: 3px;
+    border-style: solid;
+    margin: 30px;
+    padding: 20px 0px;
+}
+.RedBull h2 {
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: var(--f1-redbull);
+    background-color: #000251;
+    max-width: 18%;
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--f1-redbull);
+    color: var(--f1-redbull);
+}
+/* RedBull only section */
+
+/* Williams only section */
+.Williams .image-container {
+    border-radius: 30px;
+    border-color: var(--f1-williams);
+    background-color: #010125;
+    border-width: 3px;
+    border-style: solid;
+    margin: 30px;
+    padding: 20px 0px;
+}
+.Williams h2 {
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: var(--f1-williams);
+    background-color: #010125;
+    max-width: 18%;
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--f1-williams);
+    color: var(--f1-williams);
+}
+/* Williams only section */
+
+/* Lotus only section */
+.Lotus .image-container {
+    border-radius: 30px;
+    border-color: #00851d;
+    background-color: #003100;
+    border-width: 3px;
+    border-style: solid;
+    margin: 30px;
+    padding: 20px 0px;
+}
+.Lotus h2 {
+    border-radius: 50px;
+    border-width: 3px;
+    border-color: #00851d;
+    background-color: #003100;
+    max-width: 18%;
+    padding: 10px;
+    border-style: solid;
+    border-color: #00851d;
+    color: #00851d;
+}
+/* Lotus only section */
 /* Mobile */
 @media (max-width: 768px) {
     .Ferrari {
