@@ -3,24 +3,51 @@ session_start();
 include("db_connect.php");
 include("reusable/alert.php");
 
+if(!isset($_SESSION["userEmail"])){
+    header("Location: signup.php");
+    exit();
+}
+
 if (isset($_POST['teamSelection'])) {
     $newTeam = $_POST['teamSelection'];
     $userID = $_SESSION['userID'];
 
     try {
-        $stmt = $pdo->prepare("UPDATE users SET team_id =
-        (SELECT team_id FROM teams WHERE team_name = :teamName)
+        //jsAlert("ID: $userID team: $newTeam");
+        $_SESSION['userTeam'] = $newTeam;
+        $stmt = $pdo->prepare("UPDATE users SET userTeam = :teamName
         WHERE user_id = :userID");
         $stmt->execute([
-            ':teamName' => $newTeam,
+            ':teamName' => chooseTeam($newTeam),
             ':userID' => $userID
         ]);
     }
     catch (PDOException $e) {
-        jsAlert('Error updating database.');
+        jsAlert('Error updating database.' . $e->getMessage());
     }
+}
 
-    $_SESSION['userTeam'] = $newTeam;
+function chooseTeam($teamSelection)
+{
+    $teams = [
+        "Mercedes" => 1,
+        "RedBull" => 2,
+        "Ferrari" => 3,
+        "McLaren" => 4,
+        "Alpine" => 5,
+        "AstonMartin" => 6,
+        "Haas" => 7,
+        "Williams" => 8,
+        "Sauber" => 9,
+        "RacingBalls" => 10,
+        "None" => 11,
+    ];
+
+    foreach ($teams as $key => $value) {
+        if ($key == $teamSelection) {
+            return $value ?? null;
+        }
+    }
 }
 ?>
 
@@ -56,7 +83,7 @@ if (isset($_POST['teamSelection'])) {
                 <option value="Sauber">Sauber</option>
                 <option value="Alpine">Alpine</option>
                 <option value="Williams">Williams</option>
-                <option value="RacingBulls">Racing Bulls</option>
+                <option value="RacingBalls">Racing Bulls</option>
                 <option value="AstonMartin">Aston Martin</option>
                 <option selected value="None">None</option>
             </select>
@@ -66,5 +93,4 @@ if (isset($_POST['teamSelection'])) {
     </div>
     <?php include "Footer.php"; ?>
 </body>
-
 </html>

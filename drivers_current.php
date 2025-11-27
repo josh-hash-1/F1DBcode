@@ -19,7 +19,7 @@
         <div class="row justify-content-center g-4">
             <!-- McLaren -->
             <div class="col-md-6">
-                <?php makeCard("Lando Norris", "British driver racing for McLaren with car #4", "Images\lando_norris_headshot.png", "Images\mclarenbg.jpg"); ?>
+                <?php makeCard("Lando Norris", "British driver racing for McLaren with car #4", "Images\lando_norris_headshot.png", "Images\british_flag.png"); ?>
             </div>
             <div class="col-md-6">
                 <?php makeCard("Oscar Piastri", "Australian driver racing for McLaren with car #81", "Images\oscar_piastri_headshot.png", "Images\mclarenbg.jpg"); ?>
@@ -43,7 +43,7 @@
                 <?php makeCard("Lewis Hamilton", "British driver racing for Ferrari with car #44", "Images\hamilton_headshot.png", "Images\ferraribg.jpg"); ?>
             </div>
             <div class="col-md-6">
-                <?php makeCard("Charles Leclerc", "French driver racing for Ferrari with car #16", "Images\leclerc_headshot.png", "Images\ferraribg.jpg"); ?>
+                <?php makeCard("Charles Leclerc", "Monogasque driver racing for Ferrari with car #16", "Images\leclerc_headshot.png", "Images\ferraribg.jpg"); ?>
             </div>
             <!-- Williams -->
             <div class="col-md-6">
@@ -72,6 +72,20 @@
             </div>
             <div class="col-md-6">
                 <?php makeCard("Fernando Alonso", "Spanish driver racing for Aston Martin with car #14", "Images\alonso_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <!-- Sauber -->
+            <div class="col-md-6">
+                <?php makeCard("Niko Hulkenberg", "German driver racing for Kick Sauber with car #27", "Images\hulkenberg_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Gabriel Bortoleto", "Brazilian driver racing for Kick Sauber with car #5", "Images\bortoleto_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <!-- Alpine -->
+            <div class="col-md-6">
+                <?php makeCard("Pierre Gasly", "French driver racing for Alpine with car #10", "Images\gasly_headshot.png", "Images\williamsbg.jpg"); ?>
+            </div>
+            <div class="col-md-6">
+                <?php makeCard("Franco Colapinto", "Argentinian driver racing for Alpine with car #43", "Images\colapinto_headshot.png", "Images\williamsbg.jpg"); ?>
             </div>
         </div>
     </div>

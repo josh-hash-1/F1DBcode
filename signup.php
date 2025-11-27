@@ -20,7 +20,7 @@
         <div class="main-content">
             <form id="signup-form" action="process_signup.php" method="POST">
             <h1>Sign Up</h1>
-            <input required type="text" name="userEmail" class="input-field" placeholder="Enter your email">
+            <input required type="email" name="userEmail" class="input-field" placeholder="Enter your email">
             <input required type="password" name="userPass" class="input-field" placeholder="Enter your password">
             <div style="display: flex; flex-direction: row; gap: 1rem;">
                 <label for="teamSelector">Choose your favorite team:</label>
@@ -38,7 +38,7 @@
                     <option selected value="None">None</option>
                 </select>
             </div>
-            <button id="submitButton" >Sign-Up!</button>
+            <button type="submit" id="submitButton" >Sign-Up!</button>
         </form>
         </div>
     </div>

@@ -7,57 +7,53 @@ $email = $_POST["userEmail"];
 $password = $_POST["userPass"];
 $teamChoice = $_POST["teamSelection"];
 
-$userID = $pdo->lastInsertId();
-
-$_SESSION["userEmail"] = $email;
-$_SESSION["userID"] = $userID;
-$_SESSION["userTeam"] = $teamChoice;
-
 $encPass = password_hash($password, PASSWORD_DEFAULT);
 
 if (empty($email)) {
-    echo "<script>alert('Email cannot be blank.'); window.history.back();</script>";
+    jsAlert("Email cannot be blank.");
 } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "<script>alert('Please use valid email format.'); window.history.back();</script>";
+    jsAlert("Please use valid email format.");
 } else if (empty($password)) {
-    echo "<script>alert('Password cannot be blank.'); window.history.back();</script>";
+    jsAlert("Password cannot be blank.");
 } else {
     try {
 
+        // statement for checking whether user exists with that email
         $sqlCheck = "SELECT * FROM users WHERE email = :email";
 
+        // query for adding user
         $sqlAdd = "INSERT INTO users (email, password, userTeam)
                 VALUES (:userEmail, :userPass, :teamSelection)";
 
         $checkStmt = $pdo->prepare($sqlCheck);
 
-        $checkStmt->execute(["email" => $email]);
+        $checkStmt->execute([":email" => $email]);
 
         $checkStmt->setFetchMode(PDO::FETCH_ASSOC);
 
-        $stmt = $pdo->prepare($sqlCheck);
-
         $users = $checkStmt->fetch();
 
-        $teamNum = chooseTeam($teamChoice);
-
         if ($users === false) {
+
+            $teamNum = chooseTeam($teamChoice);
 
             $addStmt = $pdo->prepare($sqlAdd);
 
             $addStmt->execute([
                 ":userEmail" => $email,
                 ":userPass" => $encPass,
-                "teamSelection" => $teamNum
+                ":teamSelection" => $teamNum
             ]);
+
+            $_SESSION["userID"] = $pdo->lastInsertId();
+            $_SESSION["userEmail"] = $email;
+            $_SESSION["userTeam"] = $teamChoice;
 
             // redirect user to their dashboard
             header("Location: account.php");
             exit();
         } else {
             jsAlert("User already exists under that email.");
-            header("Location: signup.php");
-            exit();
         }
     } catch (PDOException $e) {
         echo 'Error inserting values into database.' . $e->getMessage();
