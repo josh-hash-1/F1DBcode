@@ -14,24 +14,31 @@
 
             <div class="Ferrari">
                 <h2>Ferrari</h2>
-                <div class="left-img">
-                    <img src="images/f2004-Ferrari.jpg" height="180" width="auto">
-                </div>
-                <img src="images/ferrari-logo.png" height="240" width="auto">
-                <div class="right-img">
-                    <img src="images/Ferrari-1950.jpg" height="180" width="auto">
-                </div>
+                    <div class="image-container">
+                        <img src="images/f2004-Ferrari.jpg" height="180" width="auto">
+                        <div class="logo-container">
+                            <img src="images/ferrari-logo.png" height="240" width="auto">
+                        </div>
+                        <img src="images/Ferrari-1950.jpg" height="180" width="auto">
+                    </div>
                 <p>
                     Ferrari stands as the longest-running team in Formula 1 history, holding more 
                     race entries than anyone else with over 1,100 Grands Prix to their name. With 
-                    nearly 250 victories and 16 Constructors’ Championships, they remain one of 
-                    the sport’s most iconic and successful teams.
+                    nearly 250 victories and 16 Constructors' Championships, they remain one of 
+                    the sport's most iconic and successful teams.
                 </p>
             </div>
 
+
             <div class="Mclaren">
                 <h2>McLaren</h2>
-                <img src="images/mclaren-logo.png" height="240" width="auto">
+                <div class="image-container">
+                    <img src="images/mclaren-mp4-4.jpg" height="180" width="auto">
+                    <div class="logo-container">
+                        <img src="images/mclaren-logo.png" height="240" width="auto">
+                    </div>
+                    <img src="images/mclaren-mcl39.jpg" height="180" width="auto">
+                </div>
                 <p>
                     McLaren is renowned for its rich history in Formula 1, boasting 12 Constructors' 
                     Championships and 8 Drivers' Championships. The team has been home to legendary 
