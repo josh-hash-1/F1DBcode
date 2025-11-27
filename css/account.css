@@ -13,20 +13,34 @@ body {
 }
 
 .main-container {
-    margin-top: 5rem;
-    gap: 2rem;
+    gap: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    padding: 2rem;
+
+    margin: 5rem auto;
+
+    border-radius: 15px;
+
+    background-color: var(--f1-grey);
+    color: var(--f1-light);
 }
 
-main {
-    flex: 1;
+.userDetail {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: xx-large;
 }
 
 #teamSelector {
-    background-color: var(--f1-dark);
+    background-color: var(--f1-grey);
     color: var(--f1-light);
     text-align: center;
     border: none;

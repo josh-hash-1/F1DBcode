@@ -30,6 +30,7 @@ if (isset($_POST['teamSelection'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="css/global.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/account.css">
 
 <title>F1DB-My Profile</title>
@@ -38,14 +39,14 @@ if (isset($_POST['teamSelection'])) {
 <body>
     <?php include "Header.php"; ?>
 
-    <main class="main-container">
-        <h1>My Account</h1>
-        <h2><?php echo "Email: " . $_SESSION['userEmail']; ?></h2>
-        <h2><?php echo "My Team: " . $_SESSION['userTeam']; ?></h2>
+    <div class="main-container">
+        <h1 class="userDetail" >My Account</h1>
+        <h2 class="userDetail"><?php echo "Email: " . $_SESSION['userEmail']; ?></h2>
+        <h2 class="userDetail"><?php echo "My Team: " . $_SESSION['userTeam']; ?></h2>
 
         <button class="changeButton">Change Password</button>
         <form style="display: flex; flex-direction: row; gap: 1rem;" method="POST" id="teamForm">
-            <label for="teamSelector">Change Teams:</label>
+            <!-- <label for="teamSelector">Change Teams:</label> -->
             <select name="teamSelection" id="teamSelector">
                 <option value="McLaren">McLaren</option>
                 <option value="RedBull">RedBull</option>
@@ -59,10 +60,10 @@ if (isset($_POST['teamSelection'])) {
                 <option value="AstonMartin">Aston Martin</option>
                 <option selected value="None">None</option>
             </select>
-            <button type="submit" class="changeButton">Confirm Change</button>
+            <button type="submit" class="changeButton">Change Teams</button>
         </form>
         <a href="logout.php" id="logoutBtn" class="changeButton">Logout</a>
-    </main>
+    </div>
     <?php include "Footer.php"; ?>
 </body>
 

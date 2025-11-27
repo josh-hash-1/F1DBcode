@@ -22,7 +22,7 @@
         <p>all in one place.</p>
       </div>
       <?php
-        if(!isset($_SESSION['user_email'])){
+        if(!isset($_SESSION['userEmail'])){
           echo "<a href='signup.php' class='btn'>Sign Up</a>";
           echo "<a href='login.php' class='btn'>Log In</a>";
         }

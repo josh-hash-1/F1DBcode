@@ -32,7 +32,7 @@ try {
     }
     else{
         echo "<script>
-        alert('One or many credentials is invalid.');
+        alert('One or both credentials invalid.');
         window.location.href='login.php';
         </script>";
         exit();

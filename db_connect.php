@@ -1,6 +1,6 @@
 <?php
 // Database credentials
-$host = "localhost";
+$host = "localhost"; // use local IP
 $dbname = "f1_db";
 $username = "root"; // Worker
 $password = ""; // joshIsFat
