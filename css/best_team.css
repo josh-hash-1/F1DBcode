@@ -38,6 +38,7 @@
     flex-wrap: wrap;
     width: 80%;
 }
+
 /* Ferrari only section */
 .Ferrari .image-container {
     border-radius: 30px;
@@ -48,6 +49,7 @@
     margin: 30px;
     padding: 20px 0px;
 }
+
 .Ferrari h2 {
     border-radius: 50px;
     border-width: 3px;
@@ -71,6 +73,7 @@
     margin: 30px;
     padding: 20px 0px;
 }
+
 .Mclaren h2 {
     border-radius: 50px;
     border-width: 3px;
@@ -94,6 +97,7 @@
     margin: 30px;
     padding: 20px 0px;
 }
+
 .Mercedes h2 {
     border-radius: 50px;
     border-width: 3px;
@@ -117,6 +121,7 @@
     margin: 30px;
     padding: 20px 0px;
 }
+
 .RedBull h2 {
     border-radius: 50px;
     border-width: 3px;
@@ -140,6 +145,7 @@
     margin: 30px;
     padding: 20px 0px;
 }
+
 .Williams h2 {
     border-radius: 50px;
     border-width: 3px;
@@ -163,6 +169,7 @@
     margin: 30px;
     padding: 20px 0px;
 }
+
 .Lotus h2 {
     border-radius: 50px;
     border-width: 3px;
@@ -175,24 +182,77 @@
     color: #00851d;
 }
 /* Lotus only section */
+
 /* Mobile */
 @media (max-width: 768px) {
-    .Ferrari {
-        padding: 0 15px;
+    .full-page h1 {
+        font-size: 20px;
+        margin-top: 20px;
     }
 
-    .Ferrari .image-container {
-        flex-direction: column;
+    .Ferrari, .Mclaren, .Mercedes, .RedBull, .Williams, .Lotus {
+        padding: 0 15px;
         gap: 15px;
     }
 
-    .Ferrari img {
+    .Ferrari h2, .Mclaren h2, .Mercedes h2, .RedBull h2, .Williams h2, .Lotus h2 {
+        font-size: large;
+        letter-spacing: 1px;
+        max-width: 90% !important;
+    }
+
+    .Ferrari p, .Mclaren p, .Mercedes p, .RedBull p, .Williams p, .Lotus p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .Ferrari .image-container, .Mclaren .image-container, .Mercedes .image-container, .RedBull .image-container, .Williams .image-container, .Lotus .image-container {
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px 0;
+    }
+
+    .Ferrari .image-container img, .Mclaren .image-container img, .Mercedes .image-container img, .RedBull .image-container img, .Williams .image-container img, .Lotus .image-container img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .Ferrari .image-container .logo-container, .Mclaren .image-container .logo-container, .Mercedes .image-container .logo-container {
         max-width: 150px;
     }
 
-    .Ferrari p {
+    .Ferrari .image-container .logo-container img, .Mclaren .image-container .logo-container img, .Mercedes .image-container .logo-container img {
         max-width: 100%;
-        font-size: 14px;
+        height: auto;
     }
 }
 
+@media (max-width: 480px) {
+    .full-page h1 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .Ferrari h2, .Mclaren h2, .Mercedes h2, .RedBull h2, .Williams h2, .Lotus h2 {
+        font-size: medium;
+        letter-spacing: 0.5px;
+    }
+
+    .Ferrari p, .Mclaren p, .Mercedes p, .RedBull p, .Williams p, .Lotus p {
+        font-size: 12px;
+    }
+
+    .Ferrari, .Mclaren, .Mercedes, .RedBull, .Williams, .Lotus {
+        padding: 0 10px;
+    }
+
+    .Ferrari .image-container, .Mclaren .image-container, .Mercedes .image-container, .RedBull .image-container, .Williams .image-container, .Lotus .image-container {
+        width: 95%;
+    }
+
+    .Ferrari .image-container img, .Mclaren .image-container img, .Mercedes .image-container img, .RedBull .image-container img, .Williams .image-container img, .Lotus .image-container img {
+        max-width: 100px;
+    }
+}
