@@ -5,6 +5,12 @@ body {
     color: var(--f1-light);
     margin: 0;
 }
+.title_first{
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--f1-light);
+    font-size: xx-large;
+}
 
 .project-container {
     display: flex;
@@ -14,7 +20,7 @@ body {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
 
 .project-card-top {
@@ -53,6 +59,9 @@ body {
     border-color: #a52834;
 }
 
+.project-card-top p {
+    color: lightgrey;
+}
 
 .project-card-top h1 {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -72,4 +81,53 @@ body {
     width: 100%;            
     height: 100%;
     object-fit: cover; 
+}
+
+/* Tablet & below */
+@media (max-width: 768px) {
+  .title_first {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .project-container {
+    gap: 20px;
+    padding: 0 15px 30px;
+  }
+
+  .project-card-top {
+    flex: 0 0 100%;       
+    padding: 12px;
+  }
+
+  .project-card-top h1 {
+    font-size: large;
+    letter-spacing: 1px;
+  }
+
+  .project-card-top p {
+    font-size: 14px;
+  }
+
+  .project-card-image-box {
+    height: 260px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .title_first {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .project-container {
+    padding: 0 10px 25px;
+    gap: 15px;
+  }
+
+  .project-card-top {
+    flex: 0 0 100%;       
+    padding: 10px;
+  }
 }
