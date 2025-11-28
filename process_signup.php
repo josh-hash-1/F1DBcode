@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php include "db_connect.php"; ?>
+<?php require "db_connect.php"; ?>
 <?php include "reusable/alert.php"; ?>
 
 <?php

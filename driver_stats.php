@@ -107,9 +107,27 @@
                     <label>Nationality</label>
                     <h3><?php echo $current['nationality_country_id']; ?></h3>
                 </div>
-                <div class="group">
+                 <div class="group">
                     <label>Abbreviation</label>
                     <h3><?php echo $current['abbreviation']; ?></h3>
+                </div>
+            </div>
+            <div class="textItems">
+                <div class="group">
+                    <label>Total Race Wins</label>
+                    <h3><?php echo $current['total_race_wins']; ?></h3>
+                </div>
+                <div class="group">
+                    <label>Total Championship Wins</label>
+                    <h3><?php echo $current['total_championship_wins']; ?></h3>
+                </div>
+                <div class="group">
+                    <label>Fastest Laps</label>
+                    <h3><?php echo $current['total_fastest_laps']; ?></h3>
+                </div>
+                <div class="group">
+                    <label>Total Podiums</label>
+                    <h3><?php echo $current['total_podiums']; ?></h3>
                 </div>
             </div>
         </div>

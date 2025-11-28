@@ -11,19 +11,19 @@ if (!$constructorRef) {
 $stmt = $pdo->prepare("
     SELECT 
         c.name AS team_name,
-        c.nationality,
-        cs.position,
+        c.country_id,
+        cs.position_display_order,
         cs.points AS season_points,
-        cs.wins,
-        COUNT(DISTINCT cs.raceId) AS races,
-        ROUND(AVG(cs.position), 1) AS avg_position
-    FROM constructor_standings cs
-    JOIN constructors c ON c.constructorId = cs.constructorId
-    JOIN races r ON r.raceId = cs.raceId
-    WHERE r.year = ? AND c.constructorRef = ?
-    GROUP BY c.constructorId
+        cs.points,
+        COUNT(DISTINCT cs.constructor_id) AS races,
+        ROUND(AVG(cs.position_display_order), 1) AS avg_position
+    FROM season_constructor_standing cs
+    JOIN constructor c ON c.id = cs.constructor_id
+    JOIN race r ON r.id = cs.constructor_id
+    WHERE r.year = :currentYear AND c.name = :constructorRef
+    GROUP BY c.id;
 ");
-$stmt->execute([$currentYear, $constructorRef]);
+$stmt->execute([":constructorRef" => $constructorRef,":currentYear"=> $currentYear]);
 $stats = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
@@ -62,7 +62,7 @@ $stats = $stmt->fetch(PDO::FETCH_ASSOC);
             <p>No 2025 data yet for this team.</p>
         <?php endif; ?>
         
-        <a href="current_constructor.php" class="btn btn--secondary">← Back to Teams</a>
+        <a href="constructors_current.php" class="btn btn--secondary">← Back to Teams</a>
     </div>
 </body>
 </html>

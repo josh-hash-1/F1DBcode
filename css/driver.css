@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 50rem;
+    min-height: 60rem;
     min-width: 60rem;
     border-radius: 20px;
     gap: 5rem;
@@ -78,6 +78,7 @@
 
 label {
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .group {
