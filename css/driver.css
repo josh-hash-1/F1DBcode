@@ -34,6 +34,24 @@
     width: auto;
 }
 
+.name-div a {
+    position: absolute;
+    left: 5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--f1-light);
+    font-weight: bold;
+    padding: 0.8rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.name-div a:hover {
+    background-color: whitesmoke;
+    color: var(--f1-grey);
+    transform: scale(1.05);
+}
+
 .name-div {
     position: relative;          
     width: 100%;

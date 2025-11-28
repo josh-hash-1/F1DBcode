@@ -1,9 +1,11 @@
-
 /* GLOBAL */
 body {
     text-align: center;
     font-family: var(--font-family);
-    background: var(--f1-dark);
+    background: linear-gradient(180deg,
+            var(--f1-dark) 0%,
+            var(--f1-dark) 90%,
+            var(--f1-grey) 100%);
     color: var(--f1-light);
     margin: 0;
 }
@@ -41,8 +43,19 @@ body {
     transition: var(--transition);
 }
 
+.driver h4 {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: var(--f1-light) !important;
+}
+
 .driver a:hover {
     transform: scale(1.01);
+}
+
+.driver p {
+    padding: 1rem;
+    font-weight: bold;
 }
 
 /* Driver headshot image */

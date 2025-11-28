@@ -75,7 +75,7 @@
             </div>
             <!-- Sauber -->
             <div class="col-md-6">
-                <?php makeCard("Niko Hulkenberg", "German driver racing for Kick Sauber with car #27", "Images\hulkenberg_headshot.png", "Images\williamsbg.jpg"); ?>
+                <?php makeCard("Nico Hulkenberg", "German driver racing for Kick Sauber with car #27", "Images\hulkenberg_headshot.png", "Images\williamsbg.jpg"); ?>
             </div>
             <div class="col-md-6">
                 <?php makeCard("Gabriel Bortoleto", "Brazilian driver racing for Kick Sauber with car #5", "Images\bortoleto_headshot.png", "Images\williamsbg.jpg"); ?>

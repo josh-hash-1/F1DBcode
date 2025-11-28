@@ -5,7 +5,7 @@ function makeCard($name, $info, $imgPath, $imgBg)
         <div class='col'>
             <div class='driver'>
                 <div id='card-vanity' class='card-body d-flex flex-column justify-content-between'>
-                    <h5 class='card-title text-danger'>$name</h5>
+                    <h4 class='card-title text-danger'>$name</h4>
                     <img style='background-image=(\"$imgBg\")' src='$imgPath' class='placeholder' alt='$name'>
                     <p class='card-text'>$info</p>
                     <a href='driver_stats.php?driver=" . urlencode($name) . "' class='btn btn-danger mt-auto'>More</a>

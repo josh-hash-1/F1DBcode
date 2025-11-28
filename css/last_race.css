@@ -17,6 +17,8 @@ body {
 
 .main-container {
     gap: 1rem;
+
+    background: linear-gradient(180deg, var(--f1-dark) 0%, var(--f1-dark) 90%, var(--f1-grey) 100%);
 }
 
 table {

@@ -7,6 +7,10 @@ body {
     font-family: var(--font-family);
     color: var(--f1-light);
     background-color: var(--f1-dark);
+    background: linear-gradient(180deg,
+            var(--f1-dark) 0%,
+            var(--f1-dark) 90%,
+            var(--f1-grey) 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;

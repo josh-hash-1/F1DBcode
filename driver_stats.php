@@ -63,7 +63,7 @@
             "fernando alonso" => "astonmartin",
 
             // Kick Sauber
-            "niko hulkenberg" => "sauber",
+            "nico hulkenberg" => "sauber",
             "gabriel bortoleto" => "sauber",
 
             // Alpine
@@ -86,6 +86,7 @@
     <div class="main-container">
         <div class="card">
             <div class="name-div">
+                <a href="drivers_current.php">← All Drivers</a>
                 <div class="inner-name-div">
                     <h1><?php echo "$parts[0]"; ?></h1>
                     <h1><?php echo "$parts[1]"; ?></h1>
