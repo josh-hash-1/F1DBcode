@@ -37,7 +37,7 @@
         <h3>Teams</h3>
         <p>Track team performance over seasons.</p>
       </a>
-      <a href="#" class="feature">
+      <a href="last_race.php" class="feature">
         <h3>Standings</h3>
         <p>Stay up-to-date with current race standings.</p>
       </a>

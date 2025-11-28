@@ -36,6 +36,7 @@
             echo "Error connecting to DataBase.". $e->getMessage();
         }
         ?>
+        <hr>
     </div>
     <?php include "Footer.php"; ?>
 </body>

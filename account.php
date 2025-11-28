@@ -71,7 +71,6 @@ function chooseTeam($teamSelection)
         <h2 class="userDetail"><?php echo "Email: " . $_SESSION['userEmail']; ?></h2>
         <h2 class="userDetail"><?php echo "My Team: " . $_SESSION['userTeam']; ?></h2>
 
-        <button class="changeButton">Change Password</button>
         <form style="display: flex; flex-direction: row; gap: 1rem;" method="POST" id="teamForm">
             <!-- <label for="teamSelector">Change Teams:</label> -->
             <select name="teamSelection" id="teamSelector">
@@ -89,8 +88,17 @@ function chooseTeam($teamSelection)
             </select>
             <button type="submit" class="changeButton">Change Teams</button>
         </form>
-        <a href="logout.php" id="logoutBtn" class="changeButton">Logout</a>
+        <div class="inner-div">
+            <button class="changeButton">Change Password</button>
+            <button id="logoutBtn" class="changeButton">Logout</button>
+        </div>
     </div>
+    <script>
+        const logout = document.getElementById("logoutBtn");
+        logout.addEventListener("click", () => {
+            window.location.href = "logout.php";
+        });
+    </script>
     <?php include "Footer.php"; ?>
 </body>
 </html>

@@ -32,6 +32,11 @@
     color: rgb(255, 255, 255);
 }
 
+hr {
+    margin: 2rem auto;
+    width: 70%;
+}
+
 .inner-div {
     display: flex;
     flex-direction: row;

@@ -39,6 +39,13 @@ body {
     font-size: xx-large;
 }
 
+.inner-div {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: nowrap;
+}
+
 #teamSelector {
     background-color: var(--f1-grey);
     color: var(--f1-light);

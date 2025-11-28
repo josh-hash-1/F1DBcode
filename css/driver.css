@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50rem;
+    min-width: 60rem;
+    border-radius: 20px;
+    gap: 5rem;
+    background-color: var(--f1-grey);
+}
+
+.textItems {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#driver-img {
+    height: 25rem;
+    width: auto;
+}
+
+.name-div {
+    position: relative;          
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    padding: 0 2rem;             
+}
+
+.inner-name-div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;     
+    align-items: center;
+    z-index: 1;                  
+}
+
+#team-logo {
+    position: absolute;         
+    right: 6rem;                 
+    height: 80px;               
+    width: auto;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.group {
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
