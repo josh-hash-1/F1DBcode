@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/best_team.css">
     <title>All-Time Best Teams</title>
+    <script src="javascript/script.js"></script>
 </head>
 <body>
    <?php include "Header.php"; ?>

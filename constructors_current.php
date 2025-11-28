@@ -1,3 +1,4 @@
+<?php include 'team_functions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,8 @@
     <title>Current Constructors</title>
     <link rel="stylesheet" href="css/current_constructor.css">
     <link rel="stylesheet" href="css/global.css">
-    
+    <script src="javascript/script.js" defer></script>
+
 </head>
 
 <body>
@@ -26,7 +28,7 @@
                 the dominant Prost–Senna partnership of the 1980s, and later championship runs with Mika Häkkinen and Lewis Hamilton using
                 Mercedes power.
             </p>
-            <button></button>
+            <?php echo teamStatsButton('mclaren'); ?>
         </div>
 
         <div class="ferrari">
@@ -41,6 +43,7 @@
                 legacy built on innovation, speed, and tradition, Ferrari remains one of the sport’s most prestigious and 
                 recognizable teams.
             </p>
+            <?php echo teamStatsButton('mclaren'); ?>
         </div>
 
         <div class="redbull">
@@ -55,6 +58,7 @@
                 engineering. Renowned for its partnership with top drivers and cutting-edge technology, Red Bull is consistently one 
                 of the most competitive and influential teams on the grid.
             </p>
+            <?php echo teamStatsButton('mclaren'); ?>
         </div>
 
         <div class="mercedes">
@@ -67,8 +71,9 @@
                 performance, technical excellence, and highly refined engineering. Returning as a works team in 2010, Mercedes went on 
                 to secure multiple consecutive Constructors’ and Drivers’ Championships through unmatched efficiency, power unit 
                 innovation, and consistent race execution. The team remains a benchmark for professionalism, precision, and competitive 
-                ßexcellence in Formula 1.
+                excellence in Formula 1.
             </p>
+            <?php echo teamStatsButton('mclaren'); ?>
         </div>
 
         <div class="aston-martin">
@@ -83,6 +88,7 @@
                 innovation and a growing infrastructure, Aston Martin continues to push toward the front of the grid while 
                 carrying the prestige of one of the world’s most iconic automotive brands.
             </p>
+            <?php echo teamStatsButton('mclaren'); ?>
         </div>
 
     <div class="alpine">
@@ -96,6 +102,7 @@
             design with factory-backed resources, aiming to consistently challenge the front of the midfield. With a focus 
             on innovation and long-term progress, the team represents France’s modern push for success in Formula 1.
         </p>
+        <?php echo teamStatsButton('mclaren'); ?>
     </div>
 
     <div class="haas">
@@ -109,6 +116,7 @@
             while maintaining a competitive presence on the grid. Despite challenges, Haas continues to develop steadily, 
             aiming to strengthen its performance and secure consistent midfield results.
         </p>
+        <?php echo teamStatsButton('mclaren'); ?>
     </div>
 
     <div class="racing-bulls">
@@ -122,6 +130,7 @@
             nurturing future stars and delivering standout performances against larger rivals. With continued support from Red Bull 
             and a sharpened competitive identity, Racing Bulls aims to be a consistent and opportunistic force in the midfield.
         </p>
+        <?php echo teamStatsButton('mclaren'); ?>
     </div>
 
     <div class="williams">
@@ -135,6 +144,7 @@
              technical excellence, producing legendary drivers and iconic cars. Today, the team is focused on rebuilding and 
              modernizing its operations, aiming to climb back toward the front of the grid while honoring its proud legacy.
         </p>
+        <?php echo teamStatsButton('mclaren'); ?>
     </div>
 
     <div class="sauber">
@@ -149,22 +159,12 @@
             nurturing standout drivers and delivering competitive midfield performances, Kick Sauber continues to build 
             momentum toward a new era of factory-backed ambition.
         </p>
+        <?php echo teamStatsButton('mclaren'); ?>
     </div>
 </div>
 <div class="Footer">
 
 </div>
-    <?php include "Footer.php" ?> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    
-
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-    
-
-    <script src="javascript/script.js"></script>
 </body>
     
 </html>
