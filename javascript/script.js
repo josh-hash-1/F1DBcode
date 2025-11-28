@@ -31,7 +31,20 @@ document.querySelectorAll('.mclaren, .ferrari, .redbull, .mercedes, .aston-marti
     const p = card.querySelector('p');
     const btn = document.createElement('button');
     btn.textContent = 'Read More';
-    btn.style.cssText = 'margin-top: 15px; padding: 8px 20px; cursor: pointer; border-radius: 5px; background: var(--f1-light); color: var(--f1-dark); border: none; font-weight: bold;';
+    btn.style.cssText = `
+            margin: 15px auto 0;
+            padding: 8px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            background: var(--f1-main);
+            color: var(--f1-light);
+            border: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            display: block;
+            width: fit-content;
+        `;
     
     const fullText = p.textContent;
     const shortText = fullText.substring(0, 150) + '...';

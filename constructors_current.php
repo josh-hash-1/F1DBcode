@@ -1,3 +1,4 @@
+<?php include 'team_functions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,7 @@
     <title>Current Constructors</title>
     <link rel="stylesheet" href="css/current_constructor.css">
     <link rel="stylesheet" href="css/global.css">
-    <?php include 'team_functions.php'; ?>
+    <script src="javascript/script.js" defer></script>
 
 </head>
 
