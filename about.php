@@ -9,8 +9,11 @@
 </head>
 <body>
     <?php include "Header.php" ?>
-    <div class="about-us-containers">
-        <h1>Basic test</h1>
+    <div class="about-us-container">
+        <div class="card-main">
+            <h1>Test test</h1>
+            <p>Hello World</p>
+        </div>
     </div>
 
     <?php include "Footer.php" ?>
