@@ -46,7 +46,7 @@ if (!in_array($currentPage, $excludeTheme)) {
           <li><a href="future_races.php">Upcoming Races</a></li>
         </ul>
       </li>
-      <li class="right"><a href="#">About Us</a></li>
+      <li class="right"><a href="about.php">About Us</a></li>
       <li class="right2"><a href="login.php">Account</a></li>
     </ul>
   </nav>
