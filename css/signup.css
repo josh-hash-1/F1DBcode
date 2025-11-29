@@ -31,6 +31,16 @@ body {
     justify-content: center; /* horizontal centering */
     align-items: center;     /* vertical centering */
 }
+.form-container a h3 {
+  color: grey;                        /* default text color */
+  text-decoration: underline;
+  transition: color 0.5s ease, transform 0.2s ease;
+}
+
+.form-container a:hover h3 {
+  color: var(--f1-hover);
+  transform: scale(1.1);
+}
 
 #signup-form {
     display: flex;

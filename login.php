@@ -22,6 +22,7 @@
             <h1>Login</h1>
             <input required type="text" name="userEmail" class="input-field" placeholder="Enter your email">
             <input required type="password" name="userPass" class="input-field" placeholder="Enter your password">
+            <a href="signup.php"> <h3>Don't have an Account? Sign up!</h3> </a>
             <button id="submitButton" >Login</button>
         </form>
         </div>
