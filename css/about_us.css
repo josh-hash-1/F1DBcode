@@ -1,15 +1,15 @@
 body {
-    text-align: center;
     font-family: var(--font-family);
     background: var(--f1-dark);
     color: var(--f1-light);
     margin: 0;
 }
 
+/* Whole about page area */
 .about-us-container {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
     width: 100%;
     max-width: 1600px;
@@ -18,12 +18,55 @@ body {
     padding-bottom: 40px;
 }
 
+/* Single card */
 .card-main {
     background: var(--f1-grey);
     flex: 100%;
-    padding: 10px;
+    padding: 24px 40px;
     border-radius: 25px;
+    padding-bottom: 80px;
     box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Large spanning title */
+.title h1 {
+    text-align: center;
+    color: var(--f1-light);
+    font-size: xxx-large;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+/* Section text inside the card */
+.body-text {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.body-text h2 {
+    font-size: xx-large;
+    margin: 0 0 8px 0;
+    text-align: left;
+    border-bottom: 2px solid darkslategrey;
+    padding-bottom: 4px;
+}
+
+.body-text p {
+    margin: 6px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: left;
+    color: lightgray;
+}
+
+/* Optional: mobile tweaks */
+@media (max-width: 768px) {
+    .card-main {
+        padding: 18px 14px;
+    }
+
+    .body-text {
+        max-width: 100%;
+    }
 }
