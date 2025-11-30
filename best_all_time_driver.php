@@ -18,7 +18,7 @@
             <div class="project-card-top">
                 <h1>Juan Manuel Fangio</h1>
                 <div class="project-card-image-box">
-                    <img src="images/juan_test.png"  alt="">
+                    <img src="images/juan_test.png" title="Photo of Juan Manuel Fangio" alt="Photo of Juan Manuel Fangio">
                 </div>
                 <div class="project-card-body"></div>
                 <p><strong>5× World Champion</strong></p>
@@ -33,7 +33,7 @@
             <div class="project-card-top">
                 <h1>Niki Lauda</h1>
                 <div class="project-card-image-box">
-                    <img src="images/niki_lauda.png"  alt="Photo of Niki Lauda">
+                    <img src="images/niki_lauda.png" title="Photo of Niku Landa" alt="Photo of Niki Lauda">
                 </div>
                 <div class="project-card-body"></div>
                 <p><strong>3× World Champion</strong></p>
@@ -49,7 +49,7 @@
             <div class="project-card-top">
                 <h1>Alain Prost</h1>
                 <div class="project-card-image-box">
-                    <img src="images/alain_sad.png" alt="">
+                    <img src="images/alain_sad.png" title="Photo of Alain Prost" alt="Photo of Alain Prost">
                 </div>
                 <p><strong>4× World Champion</strong></p>
                 <p><strong>1985, 1986, 1989, 1993</strong></p>
@@ -64,7 +64,7 @@
             <div class="project-card-top">
                 <h1>Ayrton Senna</h1>
                 <div class="project-card-image-box">
-                    <img src="images/ayrton_senna.png"  alt="">
+                    <img src="images/ayrton_senna.png" title="Photo of Ayrton Senna" alt="Photo of Ayrton Senna">
                 </div>
                 <div class="project-card-body"></div>
                 <p><strong>3× World Champion</strong></p>
@@ -80,7 +80,7 @@
             <div class="project-card-top">
                 <h1>Michael Schumacher</h1>
                 <div class="project-card-image-box">
-                    <img src="images/Michael_Schumacher.jpg" alt="">
+                    <img src="images/Michael_Schumacher.jpg" title="Photo of Michael Schumacher" alt="Photo of Michael Schumacher">
                 </div>
                 <p><strong>7× World Champion</strong></p>
                 <p><strong>1994, 1995, 2000, 2001, 2002, 2003, 2004</strong></p>
@@ -95,7 +95,7 @@
             <div class="project-card-top">
                 <h1>Lewis Hamilton</h1>
                 <div class="project-card-image-box">
-                    <img src="images/Lewis-on-car.jpg" alt="">
+                    <img src="images/Lewis-on-car.jpg" title="Photo of Lewis Hamilton "alt="Photo of Lewis Hamilton">
                 </div>
                 <p><strong>7× World Champion</strong></p>
                 <p><strong>2008, 2014, 2015, 2017, 2018, 2019, 2020</strong></p>
@@ -110,7 +110,7 @@
             <div class="project-card-top">
                 <h1>Sebastian Vettel</h1>
                 <div class="project-card-image-box">
-                    <img src="images/sebby_test.jpg"  alt="">
+                    <img src="images/sebby_test.jpg" title="Photo of Sebastian Vettel" alt="Photo of Sebastian Vettel">
                 </div>
                 <div class="project-card-body"></div>
                 <p><strong>4× World Champion</strong></p>
@@ -126,7 +126,7 @@
             <div class="project-card-top">
                 <h1>Max Verstappen</h1>
                 <div class="project-card-image-box">
-                    <img src="images/max_test.png"  alt="">
+                    <img src="images/max_test.png" title="Photo of Max Verstappen" alt="Photo of Max Verstappen">
                 </div>
                 <div class="project-card-body"></div>
                 <p><strong>3× World Champion</strong></p>
