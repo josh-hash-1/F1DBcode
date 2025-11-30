@@ -18,7 +18,7 @@
             <div class="project-card-top">
                 <h1>Juan Manuel Fangio</h1>
                 <div class="project-card-image-box">
-                    <img src="images/juan_test.png" title="Photo of Juan Manuel Fangio" alt="Photo of Juan Manuel Fangio">
+                    <img src="images/juan_manuel_angio.png" title="Photo of Juan Manuel Fangio" alt="Photo of Juan Manuel Fangio">
                 </div>
                 <div class="project-card-body"></div>
                 <p><strong>5× World Champion</strong></p>
@@ -49,7 +49,7 @@
             <div class="project-card-top">
                 <h1>Alain Prost</h1>
                 <div class="project-card-image-box">
-                    <img src="images/alain_sad.png" title="Photo of Alain Prost" alt="Photo of Alain Prost">
+                    <img src="images/alain_prost_HOF.png" title="Photo of Alain Prost" alt="Photo of Alain Prost">
                 </div>
                 <p><strong>4× World Champion</strong></p>
                 <p><strong>1985, 1986, 1989, 1993</strong></p>
@@ -95,7 +95,7 @@
             <div class="project-card-top">
                 <h1>Lewis Hamilton</h1>
                 <div class="project-card-image-box">
-                    <img src="images/Lewis-on-car.jpg" title="Photo of Lewis Hamilton "alt="Photo of Lewis Hamilton">
+                    <img src="images/lewis_hamilton.jpg" title="Photo of Lewis Hamilton "alt="Photo of Lewis Hamilton">
                 </div>
                 <p><strong>7× World Champion</strong></p>
                 <p><strong>2008, 2014, 2015, 2017, 2018, 2019, 2020</strong></p>
@@ -110,7 +110,7 @@
             <div class="project-card-top">
                 <h1>Sebastian Vettel</h1>
                 <div class="project-card-image-box">
-                    <img src="images/sebby_test.jpg" title="Photo of Sebastian Vettel" alt="Photo of Sebastian Vettel">
+                    <img src="images/sebastian_vettel.jpg" title="Photo of Sebastian Vettel" alt="Photo of Sebastian Vettel">
                 </div>
                 <div class="project-card-body"></div>
                 <p><strong>4× World Champion</strong></p>
@@ -126,7 +126,7 @@
             <div class="project-card-top">
                 <h1>Max Verstappen</h1>
                 <div class="project-card-image-box">
-                    <img src="images/max_test.png" title="Photo of Max Verstappen" alt="Photo of Max Verstappen">
+                    <img src="images/max_verstappen.png" title="Photo of Max Verstappen" alt="Photo of Max Verstappen">
                 </div>
                 <div class="project-card-body"></div>
                 <p><strong>3× World Champion</strong></p>
