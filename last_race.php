@@ -13,17 +13,22 @@
 
 <body>
     <?php include "Header.php";
-    include "reusable/card.php"; include "reusable/alert.php"; ?>
+    include "reusable/card.php";
+    include "reusable/alert.php"; ?>
     <div class="main-container">
         <?php
         try {
             $latestRaceStmt = $pdo->prepare("SELECT * FROM `race` WHERE date <= CURRENT_DATE ORDER BY id DESC;");
             $latestRaceStmt->execute();
             $latestRace = $latestRaceStmt->fetch(PDO::FETCH_ASSOC);
-
-            $positionStmt = $pdo->prepare("SELECT * FROM `race_data` WHERE `type` = 'RACE_RESULT' AND `race_id` = :raceID ORDER BY `position_display_order` ASC;");
-            $positionStmt->execute([":raceID" => $latestRace['id']]);
-            $position = $positionStmt->fetchAll(PDO::FETCH_ASSOC);
+            $raceID = $latestRace["id"];
+            while (true) {
+                $positionStmt = $pdo->prepare("SELECT * FROM `race_data` WHERE `type` = 'RACE_RESULT' AND `race_id` = :raceID ORDER BY `position_display_order` ASC;");
+                $positionStmt->execute([":raceID" => $raceID]);
+                if($positionStmt->rowCount() === 0) { $raceID--; continue; }
+                $position = $positionStmt->fetchAll(PDO::FETCH_ASSOC);
+                break;
+            }
             ?>
             <h2 class="raceInfoHeader"><?php echo "<strong>Official Name:</strong> " . $latestRace['official_name']; ?></h2>
             <h2><?php echo "<strong>Circuit:</strong> " . $latestRace['circuit_id']; ?></h2>
@@ -47,7 +52,7 @@
                     }
                 }
         } catch (PDOException $e) {
-            jsAlert('Error connecting to DataBase.'. $e->getMessage());
+            jsAlert('Error connecting to DataBase.' . $e->getMessage());
         }
         ?>
         </table>

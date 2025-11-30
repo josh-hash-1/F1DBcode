@@ -25,16 +25,16 @@
             <div style="display: flex; flex-direction: row; gap: 1rem;">
                 <label for="teamSelector">Choose your favorite team:</label>
                 <select name="teamSelection" id="teamSelector">
-                    <option value="mclaren">McLaren</option>
-                    <option value="red-bull">RedBull</option>
-                    <option value="ferrari">Ferrari</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="haas">Haas</option>
-                    <option value="kick-sauber">Sauber</option>
-                    <option value="alpine">Alpine</option>
-                    <option value="williams">Williams</option>
-                    <option value="racing-bulls">Racing Bulls</option>
-                    <option value="aston-martin">Aston Martin</option>
+                    <option value="McLaren">McLaren</option>
+                    <option value="RedBull">RedBull</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Haas">Haas</option>
+                    <option value="Sauber">Sauber</option>
+                    <option value="Alpine">Alpine</option>
+                    <option value="Williams">Williams</option>
+                    <option value="RacingBalls">Racing Bulls</option>
+                    <option value="AstonMartin">Aston Martin</option>
                     <option selected value="None">None</option>
                 </select>
             </div>

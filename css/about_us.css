@@ -8,6 +8,7 @@ body {
 /* Whole about page area */
 .about-us-container {
     justify-content: center;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

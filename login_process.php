@@ -7,7 +7,7 @@ $email = $_POST["userEmail"];
 
 try {
     $checkQuery = "SELECT * FROM users WHERE email = :email";
-    $query = "SELECT * from user_team_view WHERE email = :email";
+    $query = "SELECT user_id, email, t.team_name FROM users JOIN f1teams t ON t.team_id = userTeam WHERE email = :email;";
 
     $stmt = $pdo->prepare($checkQuery);
     $stmt->execute([":email" => $email]);
@@ -18,7 +18,7 @@ try {
     $stmt = $pdo->prepare($query);
     $stmt->execute([":email" => $email]);
 
-    $user = $stmt->fetch();
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (password_verify($_POST["userPass"],$userCheck["password"])) {
 
@@ -38,6 +38,6 @@ try {
         exit();
     }
 } catch (PDOException $e) {
-    jsAlert("Error fetching data from database.");
+    echo("Error fetching data from database." . $e->getMessage());
 }
 ?>

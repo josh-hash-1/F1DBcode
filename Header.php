@@ -47,6 +47,6 @@ if (!in_array($currentPage, $excludeTheme)) {
         </ul>
       </li>
       <li class="right"><a href="about.php">About Us</a></li>
-      <li class="right2"><a href="login.php">Account</a></li>
+      <li class="right2"><a href="account.php">Account</a></li>
     </ul>
   </nav>
