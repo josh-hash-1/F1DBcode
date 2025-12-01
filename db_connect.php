@@ -3,7 +3,7 @@
 $host = "localhost"; // use local IP
 $dbname = "f1_db";
 $username = "root"; // Worker
-$password = ""; // joshIsFat
+$password = "";
 try {
 // Create PDO connection
 $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username,$password);
