@@ -11,17 +11,25 @@
 
 <body>
     <?php include "Header.php"; ?>
+
     <div class="main-container">
         <?php
         include "db_connect.php";
+
         try {
+            // Select all races where the date is in the future
             $stmt = $pdo->prepare("SELECT * FROM `race` WHERE date > CURRENT_DATE;");
             $stmt->execute();
+
+            // Fetch all upcoming races as an associative array
             $upcomingRaces = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            // Loop through each race and display its info
             foreach ($upcomingRaces as $race) {
                 $name = $race["official_name"];
                 $circuit = $race["circuit_id"];
                 $date = $race["date"];
+
                 echo "
                     <div class='race-div'>
                         <h1>$name</h1>
@@ -33,11 +41,13 @@
                 ";
             }
         } catch (PDOException $e) {
-            echo "Error connecting to DataBase.". $e->getMessage();
+            // Show error if database connection or query fails
+            echo "Error connecting to DataBase: " . $e->getMessage();
         }
         ?>
         <hr>
     </div>
+
     <?php include "Footer.php"; ?>
 </body>
 

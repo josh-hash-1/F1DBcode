@@ -14,6 +14,7 @@
   <?php include "Header.php"; ?>
 
   <div class="main-container">
+    <!-- Hero Section -->
     <section class="hero">
       <img src="f1db-logo.png" alt="F1DB logo" style="width: 10rem; height: 10rem;">
       <div class="title-div">
@@ -21,6 +22,8 @@
         <p>teams - drivers - stats</p>
         <p>all in one place.</p>
       </div>
+
+      <!-- Sign Up / Log In buttons -->
       <?php
         if(!isset($_SESSION['userEmail'])){
           echo "<a href='signup.php' class='btn'>Sign Up</a>";
@@ -28,6 +31,8 @@
         }
       ?>
     </section>
+
+    <!-- Feature Links -->
     <div class="features">
       <a href="drivers_current.php" class="feature">
         <h3>Drivers</h3>
@@ -43,6 +48,7 @@
       </a>
     </div>
   </div>
+
   <?php include "Footer.php"; ?>
 </body>
 

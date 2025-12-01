@@ -1,4 +1,5 @@
 <?php
+// displays team stats depending on given team argument
 function teamStatsButton($constructorRef) {
     $url = "team_stats.php?constructor_ref=" . urlencode($constructorRef);
     return "

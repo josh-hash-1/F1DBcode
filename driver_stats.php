@@ -10,15 +10,20 @@
 </head>
 
 <body>
-    <?php include "Header.php";
+    <?php 
+    include "Header.php";
     include "db_connect.php";
-    include "reusable/alert.php"; ?>
-    <?php
+    include "reusable/alert.php"; 
+
+    // Get driver name from query parameter
     $driverName = $_GET["driver"];
+
+    // Split first and last name
     $parts = explode(" ", $driverName);
-    $lowerLast = strtolower($parts[1]);
+    $lowerLast = strtolower($parts[1]); // used for image filename
 
     try {
+        // Fetch driver details from DB
         $stmt = $pdo->prepare("SELECT * FROM `driver` WHERE name = :driverName;");
         $stmt->execute([":driverName" => $driverName]);
         $current = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -26,74 +31,59 @@
         jsAlert("Error connecting to DB." . $e->getMessage());
     }
 
+    // Map drivers to their teams
     function teamAssociate($driver)
     {
-
         $driversToConstructors = [
-            // McLaren
             "lando norris" => "mclaren",
             "oscar piastri" => "mclaren",
-
-            // RedBull
             "max verstappen" => "redbull",
             "yuki tsunoda" => "redbull",
-
-            // Mercedes
             "george russell" => "mercedes",
             "kimi antonelli" => "mercedes",
-
-            // Ferrari
             "lewis hamilton" => "ferrari",
             "charles leclerc" => "ferrari",
-
-            // Williams
             "alexander albon" => "williams",
             "carlos sainz" => "williams",
-
-            // Racing Bulls
             "liam lawson" => "racingbulls",
             "isack hadjar" => "racingbulls",
-
-            // Haas
             "esteban ocon" => "haas",
             "oliver bearman" => "haas",
-
-            // Aston Martin
             "lance stroll" => "astonmartin",
             "fernando alonso" => "astonmartin",
-
-            // Kick Sauber
             "nico hulkenberg" => "sauber",
             "gabriel bortoleto" => "sauber",
-
-            // Alpine
             "pierre gasly" => "alpine",
             "franco colapinto" => "alpine"
         ];
 
-
-        foreach ($driversToConstructors as $key => $value) {
-            if (strtolower($driver) === $key) {
-                return $value;
-            }
-        }
-        return null;
+        $driverLower = strtolower($driver);
+        return $driversToConstructors[$driverLower] ?? null;
     }
 
+    // Get driver team
     $driver_team = teamAssociate($driverName);
-
     ?>
+
     <div class="main-container">
         <div class="card">
             <div class="name-div">
+                <!-- Link back to all drivers -->
                 <a href="drivers_current.php">← All Drivers</a>
+
                 <div class="inner-name-div">
-                    <h1><?php echo "$parts[0]"; ?></h1>
-                    <h1><?php echo "$parts[1]"; ?></h1>
+                    <h1><?php echo $parts[0]; ?></h1>
+                    <h1><?php echo $parts[1]; ?></h1>
                 </div>
-                <img id="team-logo" src="<?php echo "Images/$driver_team" . "-logo.png"; ?>" alt="Team Image">
+
+                <!-- Team logo -->
+                <img id="team-logo" src="<?php echo "Images/$driver_team-logo.png"; ?>" alt="Team Image">
             </div>
-            <img id="driver-img" src="<?php echo "Images/$lowerLast" . "_headshot.png"; ?>" alt="Driver Image">
+
+            <!-- Driver headshot -->
+            <img id="driver-img" src="<?php echo "Images/{$lowerLast}_headshot.png"; ?>" alt="Driver Image">
+
+            <!-- Personal info -->
             <div class="textItems">
                 <div class="group">
                     <label>Permanent Number</label>
@@ -107,11 +97,13 @@
                     <label>Nationality</label>
                     <h3><?php echo $current['nationality_country_id']; ?></h3>
                 </div>
-                 <div class="group">
+                <div class="group">
                     <label>Abbreviation</label>
                     <h3><?php echo $current['abbreviation']; ?></h3>
                 </div>
             </div>
+
+            <!-- Career stats -->
             <div class="textItems">
                 <div class="group">
                     <label>Total Race Wins</label>
@@ -132,6 +124,7 @@
             </div>
         </div>
     </div>
+
     <?php include "Footer.php"; ?>
 </body>
 
