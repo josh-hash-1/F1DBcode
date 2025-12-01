@@ -60,8 +60,9 @@
             <div class="body-text">
                 <h2>Misc. Components</h2>
                 <p> 
-                    Member Names: Spencer Scarlett 041151395
-
+                    Member Names: Spencer Scarlett 041151395, Josh Hash 041147440, Jacob Dawes 041169788
+                    Files contain smart and valuable comments. Naming conventions are consistent, proper folder and file structure and design, and separations where needed. 
+                    DRY is followed when able. The README contains proper information.
                 </p>
             </div>
         </div>
