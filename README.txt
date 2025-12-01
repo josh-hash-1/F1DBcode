@@ -1,3 +1,17 @@
+ReadMeTest
+Project description and features:
+
+
+Installation instructions:
+
+
+Database setup instructions:
+
+
+Group member contributions:
+
+
+
 This project was created for educational purposes as part of a coursework assignment.
 We do not claim ownership of the Formula 1 (F1) brand, its trademarks, teams, drivers, or any other associated intellectual property. All F1-related names, logos, and data are the property of their respective owners.
 The data used in this project is sourced from the F1DB[1] repository on GitHub.

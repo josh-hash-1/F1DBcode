@@ -43,15 +43,32 @@
             <div class="body-text">
                 <h2>Back End Components</h2>
                 <p> 
-                    Will includes things about backend, CRUD ops., database usage, php, etc... 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus harum a sunt. Doloribus, error expedita quia tempore ratione blanditiis at culpa delectus, quas alias voluptatum corporis vero perferendis sequi!
+                    Website follows base PHP standards, following basic syntax and coding practices. All files, variables, containers, and more use consistent, logical naming conventions for easy use. 
+                    Functions have smart, necessary parameters and return statements. Includes are used with all inputs, and functions have active error handling. 
+                    MySQL is used as a base for the majority of the program's features, with PDOs for connections, prepared statements, and more used to prevent common vulnerabilities. 
+                    All CRUD operations are included for account usage. Where needed, session and user authentication are used with proper form validation. 
+                    The website uses POST with smart and efficient query strings.
                 </p>
+                <ul>
+                    <li>All CRUD operations work correctly</li>
+                    <li>Login/logout system functions properly</li>
+                    <li>Database includes at least 2 related tables</li>
+                    <li>Database creation SQL script is included</li>
+                </ul>
             </div>
 
             <div class="body-text">
                 <h2>Misc. Components</h2>
-                <p> 
-                    Will include things about readme, comments, member names, etc...
+                <p><strong>Member Names</strong></p>
+                <ul>
+                    <li>Josh Hash 041147440</li>
+                    <li>Jacob Dawes 041169788</li>
+                    <li>Spencer Scarlett 041151395</li>
+                </ul>
+                
+                <p>
+                    Files contain smart and valuable comments. Naming conventions are consistent, proper folder and file structure and design, and separations where needed. 
+                    DRY is followed when able. The README contains proper information.
                 </p>
             </div>
         </div>
