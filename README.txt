@@ -34,3 +34,6 @@ We did not create or modify the F1DB dataset and acknowledge that it remains the
 This project is not affiliated with, endorsed by, or sponsored by Formula 1, the FIA, or any related organizations.
 
 [1] Link to database used for this project -> https://github.com/f1db/f1db
+
+
+Project done by Josh Hash, Jacob Dawes and Spencer Scarlet
